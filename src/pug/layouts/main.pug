@@ -1,31 +1,57 @@
-+b.main#main
++b.main#main(data-aos="main-aos")
 	+e.wrap.wrap
 		+e.bubble1.js-svg(data-svg-src="app/objects/main__bubble1.svg")
 		+e.bubble2.js-svg(data-svg-src="app/objects/main__bubble2.svg")
 		+e.content
 			+e.head
-				+e.head-text.color-blue Только для водителей
+				+e.head-text.color-blue
+					span.line
+						span.word Только&nbsp;
+						span.word для&nbsp;
+						span.word водителей
 				+e.head-uber
 					+icon('uber','0 0 60 21')
 				+e.head-lya
 					+icon('lya','0 0 43 30')
 			+e.title.h1
-				| Учавствуй в акции от Uber и выиграй до 400 000$
+				span.line
+					span.word Учавствуй&nbsp;
+					span.word в&nbsp;
+					span.word акции&nbsp;
+					span.word от&nbsp;
+					span.word Uber&nbsp;
+				span.line
+					span.word и&nbsp;
+					span.word выиграй&nbsp;
+					span.word до&nbsp;
+					span.word 400 000$
 			+e.desc.color-grey
-				| Получите возможность всего за 20$ выиграть до 400 000$ каждую неделю!
+				span.line
+					span.word Получите&nbsp;
+					span.word возможность&nbsp;
+					span.word всего&nbsp;
+					span.word за&nbsp;
+					span.word 20$&nbsp;
+					span.word выиграть&nbsp;
+					span.word до&nbsp;
+					span.word 400 000$&nbsp;
+					span.word каждую&nbsp;
+					span.word неделю! 
 		+e.img.js-svg(data-svg-src="/app/objects/main__img.svg")
 		+e.buttons.buttons.flex
-				+e.A.btn.btn._app.js-modal(href="#modal")
-					span.btn__center
-						span.btn__icon-apple
+				+e.A.btn.btn__._app.js-modal(href="#modal")
+					+e.back.js-circles
+					+e.center
+						+e.icon-apple
 							+icon('apple','0 0 28 32')
-						span.btn__text
-							span.btn__text-desc Загрузите в
-							span.btn__text-title App Store
-				+e.A.btn.btn._app.js-modal(href="#modal")
-					span.btn__center
-						span.btn__icon-play
+						+e.text
+							+e.text-desc Загрузите в
+							+e.text-title App Store
+				+e.A.btn.btn__._app.js-modal(href="#modal")
+					+e.back.js-circles
+					+e.center
+						+e.icon-play
 							+icon('play','0 0 25 27')
-						span.btn__text
-							span.btn__text-desc Загрузите в
-							span.btn__text-title App Store
+						+e.text
+							+e.text-desc Загрузите в
+							+e.text-title App Store

@@ -1,4 +1,4 @@
-+b.HEADER.header
++b.HEADER.header(data-aos="header-aos")
 	+e.wrap.wrap
 		+e.center.flex._justify._vertical
 			+e.A.logo.js-svg(href="#",data-svg-src="/app/objects/logo.svg")
@@ -22,9 +22,12 @@
 						+e.A.lang-item(href="#eng")
 							+e.IMG.lang-icon(src='/img/flag-eng.png')
 							+e.lang-text Eng
-				+e.A.btn.btn._download.js-modal(href="#modal") Скачать
-					span.btn__load
-						span.btn__load-icon
+				+e.A.btn.btn__._download.js-modal(href="#modal") 
+					+e.text Скачать
+					+e.load
+						+e.load-icon._upstairs
+							+icon('arrow','0 0 12 10')
+						+e.load-icon._default
 							+icon('arrow','0 0 12 10')
 				+e.A.burger
 +b.mobile

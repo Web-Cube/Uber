@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	
 	$(".header__lang").click(function(){

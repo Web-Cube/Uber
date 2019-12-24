@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.6.4",
+    "aos": "^2.3.4",
     "babel-upgrade": "^1.0.1",
     "fontforge": "0.0.4",
     "gulp-insert": "^0.5.0",

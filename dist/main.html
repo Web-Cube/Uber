@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1576409630105">
+    <link rel="stylesheet" href="/app/css/app.css?v=1577220913599">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -14,7 +14,7 @@
 
 <body id="top">
     <div class="main-wrap">
-        <header class="header">
+        <header class="header" data-aos="header-aos">
             <div class="header__wrap wrap">
                 <div class="header__center flex flex_justify flex_vertical">
                     <a class="header__logo js-svg" href="#" data-svg-src="/app/objects/logo.svg"></a>
@@ -42,9 +42,17 @@
                                     </picture><span class="header__lang-text">Eng</span>
                                 </a>
                             </div>
-                        </div><a class="header__btn btn btn_download js-modal" href="#modal">Скачать<span class="btn__load"><span class="btn__load-icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></a>
-                        <a
-                        class="header__burger"></a>
+                        </div>
+                        <a class="header__btn btn btn_download js-modal" href="#modal"> <span class="btn__text">Скачать</span><span class="btn__load"><span class="btn__load-icon btn__load-icon_upstairs"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span>
+                            <span
+                            class="btn__load-icon btn__load-icon_default">
+                                <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
+                                    <use xlink:href="/app/icons/sprite.svg#arrow"></use>
+                                </svg>
+                                </span>
+                                </span>
+                        </a>
+                        <a class="header__burger"></a>
                     </div>
                 </div>
             </div>
@@ -64,13 +72,14 @@
                 </div>
             </div>
         </div>
-        <div class="main" id="main">
+        <div class="main" id="main" data-aos="main-aos">
             <div class="main__wrap wrap">
                 <div class="main__bubble1 js-svg" data-svg-src="app/objects/main__bubble1.svg"></div>
                 <div class="main__bubble2 js-svg" data-svg-src="app/objects/main__bubble2.svg"></div>
                 <div class="main__content">
                     <div class="main__head">
-                        <div class="main__head-text color-blue">Только для&nbsp;водителей</div>
+                        <div class="main__head-text color-blue"><span class="line"><span class="word">Только&nbsp;</span><span class="word">для&nbsp;</span><span class="word">водителей</span></span>
+                        </div>
                         <div class="main__head-uber">
                             <svg class="icon icon-uber uber" viewBox="0 0 60 21">
                                 <use xlink:href="/app/icons/sprite.svg#uber"></use>
@@ -82,13 +91,19 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="main__title h1">Учавствуй в&nbsp;акции от&nbsp;Uber и&nbsp;выиграй до&nbsp;400 000$</div>
-                    <div class="main__desc color-grey">Получите возможность всего за&nbsp;20$ выиграть до&nbsp;400 000$ каждую неделю!</div>
+                    <div class="main__title h1"><span class="line"><span class="word">Учавствуй&nbsp;</span><span class="word">в&nbsp;</span><span class="word">акции&nbsp;</span><span class="word">от&nbsp;</span><span class="word">Uber&nbsp;</span></span><span class="line"><span class="word">и&nbsp;</span>
+                        <span
+                        class="word">выиграй&nbsp;</span><span class="word">до&nbsp;</span><span class="word">400 000$</span></span>
+                    </div>
+                    <div class="main__desc color-grey"><span class="line"><span class="word">Получите&nbsp;</span><span class="word">возможность&nbsp;</span><span class="word">всего&nbsp;</span><span class="word">за&nbsp;</span><span class="word">20$&nbsp;</span><span class="word">выиграть&nbsp;</span>
+                        <span
+                        class="word">до&nbsp;</span><span class="word">400 000$&nbsp;</span><span class="word">каждую&nbsp;</span><span class="word">неделю! </span></span>
+                    </div>
                 </div>
                 <div class="main__img js-svg" data-svg-src="/app/objects/main__img.svg"></div>
-                <div class="main__buttons buttons flex"><a class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                <div class="main__buttons buttons flex"><a class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
                     <a
-                    class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                    class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
                         <span
                         class="btn__text-title">App Store</span>
                             </span>
@@ -97,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="offer" id="share">
+        <div class="offer" id="share" data-aos="offer-aos">
             <div class="offer__wrap wrap">
                 <div class="offer__list flex flex_justify">
                     <div class="offer__item">
@@ -105,26 +120,32 @@
                             <div class="offer__icon js-svg" data-svg-src="app/objects/step1__icon.svg"></div>
                             <div class="offer__number">1</div>
                         </div>
-                        <h3 class="offer__title h3">Примите участие <br>в&nbsp;нашей Акции</h3>
-                        <div class="offer__desc color-grey">Зарегистрируйтесь на&nbsp;сайте для&nbsp;отображения рейтинга и&nbsp;оплатите взнос 20$ для&nbsp;принятия участия в&nbsp;Акции от&nbsp;Uber</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                        <div class="offer__bottom">
+                            <h3 class="offer__title h3">Примите участие <br>в&nbsp;нашей Акции</h3>
+                            <div class="offer__desc color-grey">Зарегистрируйтесь на&nbsp;сайте для&nbsp;отображения рейтинга и&nbsp;оплатите взнос 20$ для&nbsp;принятия участия в&nbsp;Акции от&nbsp;Uber</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
+                        </div>
                     </div>
                     <div class="offer__item">
                         <div class="offer__head">
                             <div class="offer__icon js-svg" data-svg-src="app/objects/step2__icon.svg"></div>
                             <div class="offer__number">2</div>
                         </div>
-                        <h3 class="offer__title h3">Развозите больше<br>всех заявок</h3>
-                        <div class="offer__desc color-grey">Реализуйте больше всех заявок. Каждую неделю мы подводим итоги и&nbsp;выбираем победителя!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                        <div class="offer__bottom">
+                            <h3 class="offer__title h3">Развозите больше<br>всех заявок</h3>
+                            <div class="offer__desc color-grey">Реализуйте больше всех заявок. Каждую неделю мы подводим итоги и&nbsp;выбираем победителя!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
+                        </div>
                     </div>
                     <div class="offer__item">
                         <div class="offer__head">
                             <div class="offer__icon js-svg" data-svg-src="app/objects/step3__icon.svg"></div>
                             <div class="offer__number active">3</div>
                         </div>
-                        <h3 class="offer__title h3">Получайте приз<br>каждую неделю!</h3>
-                        <div class="offer__desc color-grey">Станьте номером 1 и&nbsp;получите приз
-                            <br>в&nbsp;размере до&nbsp;400 000$ и&nbsp;получите
-                            <br>в&nbsp;этот же день!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                        <div class="offer__bottom">
+                            <h3 class="offer__title h3">Получайте приз<br>каждую неделю!</h3>
+                            <div class="offer__desc color-grey">Станьте номером 1 и&nbsp;получите приз
+                                <br>в&nbsp;размере до&nbsp;400 000$ и&nbsp;получите
+                                <br>в&nbsp;этот же день!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,8 +153,8 @@
         <div class="steps">
             <div class="steps__wrap wrap">
                 <div class="steps__list">
-                    <div class="steps__item steps__item-1 flex flex_vertical">
-                        <div class="steps__col1">
+                    <div class="steps__item steps__item-1 flex flex_vertical" data-aos="column-aos" data-aos-offset="600">
+                        <div class="steps__col1 css-column">
                             <div class="steps__number">ШАГ 1</div>
                             <h2 class="steps__title h2">Зарегистрируйтесь на&nbsp;сайте и&nbsp;оплатите взнос 20$</h2>
                             <div class="steps__desc color-grey">Скачайте и&nbsp;зарегистрируйтесь в&nbsp;нашем приложении. Участвовать можете каждую неделю!
@@ -149,21 +170,20 @@
                         <div class="steps__step1-bubble3 js-svg" data-svg-src="app/objects/step1__bubble3.svg"></div>
                         <div class="steps__step1-bubble4 js-svg" data-svg-src="app/objects/step1__bubble4.svg"></div>
                     </div>
-                    <div class="steps__item steps__item-2 flex flex_vertical">
+                    <div class="steps__item steps__item-2 flex flex_vertical" data-aos="column-aos" data-aos-offset="600">
                         <div class="steps__col3">
                             <div class="steps__img js-svg" data-svg-src="app/objects/step2__img.svg"></div>
                         </div>
-                        <div class="steps__col4">
+                        <div class="steps__col4 css-column">
                             <div class="steps__number">ШАГ 2</div>
                             <h2 class="steps__title h2">Выполните заявок больше всех</h2>
                             <div class="steps__desc color-grey">Побеждает тот, кто по&nbsp;итогу к&nbsp;концу недели выполнит больше всех заявок.
                                 <br>Победитель получает весь призовой фонд!</div>
-                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
                                 <a
-                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span>
                                     <span
-                                    class="btn__text-title">App Store</span>
-                                        </span>
+                                    class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span>
                                         </span>
                                         </a>
                             </div>
@@ -173,19 +193,18 @@
                         <div class="steps__step2-bubble3 js-svg" data-svg-src="app/objects/step2__bubble3.svg"></div>
                         <div class="steps__step2-bubble4 js-svg" data-svg-src="app/objects/step2__bubble4.svg"></div>
                     </div>
-                    <div class="steps__item steps__item-3 flex flex_vertical">
-                        <div class="steps__col5">
+                    <div class="steps__item steps__item-3 flex flex_vertical" data-aos="column-aos" data-aos-offset="600">
+                        <div class="steps__col5 css-column">
                             <div class="steps__number">ШАГ 3</div>
                             <h2 class="steps__title h2">Прийдите к&nbsp;нам в&nbsp;офис и&nbsp;заберите свой приз!</h2>
                             <div class="steps__desc color-grey">Вы можете участвовать каждую неделю.
                                 <br>1 акция - 1 неделя.
                                 <br>Стоимость участия: 20$ - 1 неделя</div>
-                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
                                 <a
-                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span>
                                     <span
-                                    class="btn__text-title">App Store</span>
-                                        </span>
+                                    class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span>
                                         </span>
                                         </a>
                             </div>
@@ -497,7 +516,7 @@
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1576409630133"></script>
+    <script src="/app/js/app.js?v=1577220913685"></script>
 </body>
 
 </html>
