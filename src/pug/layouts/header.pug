@@ -1,0 +1,54 @@
++b.HEADER.header
+	+e.wrap.wrap
+		+e.center.flex._justify._vertical
+			+e.A.logo.js-svg(href="#",data-svg-src="/app/objects/logo.svg")
+			+e.NAV.menu
+				+e.A.link.js-scroll-to(href="#main") Главная
+				+e.A.link.js-scroll-to(href="#share") Акция
+				+e.A.link.js-scroll-to(href="#winners") Наши победители
+				+e.A.link.js-scroll-to(href="#faq") FAQ
+			+e.right.flex_vertical
+				+e.A.email(href="mailto:support@oboosho.com")
+					strong support@
+					| oboosho.com
+				+e.lang
+					+e.A.lang-item._current(href="#ru")
+						+e.IMG.lang-icon(src='/img/flag-ru.png')
+						+e.lang-text Ru
+					+e.lang-list
+						+e.A.lang-item(href="#ru")
+							+e.IMG.lang-icon(src='/img/flag-ru.png')
+							+e.lang-text Ru
+						+e.A.lang-item(href="#eng")
+							+e.IMG.lang-icon(src='/img/flag-eng.png')
+							+e.lang-text Eng
+				+e.A.btn.btn._download.js-modal(href="#modal") Скачать
+					span.btn__load
+						span.btn__load-icon
+							+icon('arrow','0 0 12 10')
+				+e.A.burger
++b.mobile
+	+e.wrap.wrap
+		+e.NAV.menu
+			+e.A.link.js-scroll-to(href="#main") Главная
+			+e.A.link.js-scroll-to(href="#share") Акция
+			+e.A.link.js-scroll-to(href="#winners") Наши победители
+			+e.A.link.js-scroll-to(href="#faq") FAQ
+		+e.A.email(href="mailto:support@oboosho.com")
+			strong support@
+			| oboosho.com
+		+e.buttons.buttons.flex
+			+e.A.btn.btn._app
+				span.btn__center
+					span.btn__icon-apple
+						+icon('apple','0 0 28 32')
+					span.btn__text
+						span.btn__text-desc Загрузите в
+						span.btn__text-title App Store
+			+e.A.btn.btn._app(href="#")
+				span.btn__center
+					span.btn__icon-play
+						+icon('play','0 0 25 27')
+					span.btn__text
+						span.btn__text-desc Загрузите в
+						span.btn__text-title App Store

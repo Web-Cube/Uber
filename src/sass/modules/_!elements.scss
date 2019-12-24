@@ -1,0 +1,106 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	font-family: 'TT Norms';
+	&_download {
+		background: $blue;
+		color: #fff;
+		min-width: 160rem;
+		height: 50rem;
+		border-radius: 44px;
+		padding: 10rem 68rem 10rem 33rem;
+	}
+	&__load {
+		width: 44rem;
+		height: 44rem;
+		border-radius: 100%;
+		position: absolute;
+		right: 3rem;
+		top: 3rem;
+		background: #5069FF;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		&-icon {
+			width: 12rem;
+			height: 10rem;
+			transform: rotate(90deg);
+			fill: #fff;
+		}
+	}
+	&_app {
+		width: 100%;
+		max-width: 240rem;
+		border-radius: 4px;
+		border: 1px solid $blue;
+		height: 78rem;
+		text-align: left;
+		&:hover {
+			background: $blue;
+			color: #fff;
+			.btn__icon-apple, .btn__icon-play {
+				fill: #fff;
+			}
+		}
+	}
+	&__center {
+		display: flex;
+		align-items: center;
+	}
+	&__icon-apple {
+		display: block;
+		width: 28rem;
+		height: 32rem;
+		fill: $blue;
+		margin-right: 13rem;
+	}
+	&__icon-play {
+		display: block;
+		width: 25rem;
+		height: 27rem;
+		fill: #000;
+		margin-right: 13rem;
+	}
+	&__text {
+		display: block;
+		&-desc {
+			font-size: 10px;
+			display: block;
+		}
+		&-title {
+			font-size: 18rem;
+			display: block;
+		}
+	}
+	&__arrow {
+		width: 12rem;
+		height: 10rem;
+		transition: all 0.15s ease-in-out;
+		fill: #fff;
+		margin-left: 23rem;
+	}
+	&_big {
+		width: 100%;
+		max-width: 240rem;
+		background: $blue;
+		color: #fff;
+		height: 78rem;
+		border-radius: 100px;
+	}
+}
+
+.more {
+	display: inline-flex;
+	align-items: center;
+	color: $blue;
+	font-family: 'TT Norms';
+	&__icon {
+		width: 12rem;
+		height: 10rem;
+		fill: $blue;
+		margin-left: 12rem;
+		transition: all 0.15s ease-in-out;
+	}
+}

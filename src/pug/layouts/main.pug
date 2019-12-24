@@ -1,0 +1,31 @@
++b.main#main
+	+e.wrap.wrap
+		+e.bubble1.js-svg(data-svg-src="app/objects/main__bubble1.svg")
+		+e.bubble2.js-svg(data-svg-src="app/objects/main__bubble2.svg")
+		+e.content
+			+e.head
+				+e.head-text.color-blue Только для водителей
+				+e.head-uber
+					+icon('uber','0 0 60 21')
+				+e.head-lya
+					+icon('lya','0 0 43 30')
+			+e.title.h1
+				| Учавствуй в акции от Uber и выиграй до 400 000$
+			+e.desc.color-grey
+				| Получите возможность всего за 20$ выиграть до 400 000$ каждую неделю!
+		+e.img.js-svg(data-svg-src="/app/objects/main__img.svg")
+		+e.buttons.buttons.flex
+				+e.A.btn.btn._app.js-modal(href="#modal")
+					span.btn__center
+						span.btn__icon-apple
+							+icon('apple','0 0 28 32')
+						span.btn__text
+							span.btn__text-desc Загрузите в
+							span.btn__text-title App Store
+				+e.A.btn.btn._app.js-modal(href="#modal")
+					span.btn__center
+						span.btn__icon-play
+							+icon('play','0 0 25 27')
+						span.btn__text
+							span.btn__text-desc Загрузите в
+							span.btn__text-title App Store

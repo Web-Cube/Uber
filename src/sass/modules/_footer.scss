@@ -1,0 +1,166 @@
+.footer {
+	padding-bottom: 95rem;
+	&__logo {
+		width: 131rem;
+	}
+	&__top {
+		border-bottom: 1px solid #E9E9EE;
+		padding-bottom: 45rem;
+		.footer__polity {
+			display: none;
+		}
+	}
+	&__center {
+		margin-top: 35rem;
+	}
+	&__menu {
+		width: 100%;
+		max-width: 470rem;
+		margin-right: 30rem;
+		display: flex;
+	}
+	&__link {
+		font-family: 'TT Norms';
+		position: relative;
+		display: block;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 100%;
+			margin-top: 2px;
+			background: #000;
+			height: 1px;
+			width: 100%;
+			transform: scale(0,1);
+			transition: all 0.15s ease-in-out;
+		}
+		&:not(:last-child) {
+			margin-right: 38rem;
+		}
+		&:hover, &:active {
+			&:after {
+				transform: scale(1,1);
+			}
+		}
+	}
+	&__email {
+		font-size: 18rem;
+		margin-right: 33rem;
+	}
+	&__lang {
+		margin-right: 40rem;
+		width: 75rem;
+		position: relative;
+		&.active {
+			.header__lang-item_current {
+				opacity: 0;
+			}
+			.header__lang-list {
+				display: block;
+			}
+		}
+		&-list {
+			position: absolute;
+			display: none;
+			left: 0;
+			top: 0;
+			width: 100%;
+			border: 1px solid #F9F9FB;
+			border-radius: 0px 0px 12px 12px;
+			background: #fff;
+		}
+		&-item {
+			display: flex;
+			align-items: center;
+			height: 60rem;
+			padding-left: 11rem;
+			&:last-child {
+				border-top: 1px solid #F9F9FB;
+			}
+		}
+		&-icon {
+			width: 18rem;
+			height: 18rem;
+			border-radius: 100%;
+			margin-right: 10rem;
+		}
+		&-text {
+			font-size: 16rem;
+			font-family: 'TT Norms';
+		}
+	}
+	&__bottom {
+		margin-top: 60rem;
+	}
+	&__polity, &__copyright {
+		font-size: 14rem;
+		color: #A9A9A9;
+		text-decoration: underline;
+	}
+	&__develop {
+		font-size: 16rem;
+		color: #000;
+		text-decoration: underline;
+	}
+}
+
+.to-top {
+	display: inline-flex;
+	align-items: center;
+	font-size: 16rem;
+	&__arrow {
+		width: 20rem;
+		transform: rotate(-90deg);
+		fill: $blue;
+		margin-right: 20rem;
+	}
+}
+
+@include max-screen($small_tablet) {
+	.footer {
+		&__center {
+			display: none;
+		}
+	}
+}
+@include max-screen($large_mobile) {
+	.footer {
+		padding-bottom: 40px;
+		&__logo {
+			width: 90px;
+		}
+		.to-top {
+			display: none;
+		}
+		&__top {
+			padding-bottom: 15px;
+			.footer__polity {
+				display: block;
+			}
+		}
+		&__bottom {
+			margin-top: 17px;
+			.footer__polity {
+				display: none;
+			}
+		}
+		&__polity, &__copyright, &__develop {
+			font-size: 11px;
+		}
+	}
+}
+@include max-screen($small_mobile) {
+	.footer {
+		&__logo {
+			width: 70px;
+		}
+		&__polity, &__copyright, &__develop {
+			font-size: 8px;
+		}
+	}
+}
+
+
+
+

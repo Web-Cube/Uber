@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1576409630105">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body id="top">
+    <div class="main-wrap">
+        <header class="header">
+            <div class="header__wrap wrap">
+                <div class="header__center flex flex_justify flex_vertical">
+                    <a class="header__logo js-svg" href="#" data-svg-src="/app/objects/logo.svg"></a>
+                    <nav class="header__menu"><a class="header__link js-scroll-to" href="#main">Главная</a><a class="header__link js-scroll-to" href="#share">Акция</a><a class="header__link js-scroll-to" href="#winners">Наши победители</a><a class="header__link js-scroll-to" href="#faq">FAQ</a>
+                    </nav>
+                    <div class="header__right flex flex_vertical"><a class="header__email" href="mailto:support@oboosho.com"><strong>support@</strong>oboosho.com</a>
+                        <div class="header__lang">
+                            <a class="header__lang-item header__lang-item_current" href="#ru">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/flag-ru.webp">
+                                        <img src="/app/img/flag-ru.png" class="header__lang-icon" alt="" role="presentation" />
+                                </picture><span class="header__lang-text">Ru</span>
+                            </a>
+                            <div class="header__lang-list">
+                                <a class="header__lang-item" href="#ru">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/flag-ru.webp">
+                                            <img src="/app/img/flag-ru.png" class="header__lang-icon" alt="" role="presentation" />
+                                    </picture><span class="header__lang-text">Ru</span>
+                                </a>
+                                <a class="header__lang-item" href="#eng">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/flag-eng.webp">
+                                            <img src="/app/img/flag-eng.png" class="header__lang-icon" alt="" role="presentation" />
+                                    </picture><span class="header__lang-text">Eng</span>
+                                </a>
+                            </div>
+                        </div><a class="header__btn btn btn_download js-modal" href="#modal">Скачать<span class="btn__load"><span class="btn__load-icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></a>
+                        <a
+                        class="header__burger"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile">
+            <div class="mobile__wrap wrap">
+                <nav class="mobile__menu"><a class="mobile__link js-scroll-to" href="#main">Главная</a><a class="mobile__link js-scroll-to" href="#share">Акция</a><a class="mobile__link js-scroll-to" href="#winners">Наши победители</a><a class="mobile__link js-scroll-to" href="#faq">FAQ</a>
+                </nav><a class="mobile__email" href="mailto:support@oboosho.com"><strong>support@</strong>oboosho.com</a>
+                <div class="mobile__buttons buttons flex"><a class="mobile__btn btn btn_app"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                    <a
+                    class="mobile__btn btn btn_app" href="#"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                        <span
+                        class="btn__text-title">App Store</span>
+                            </span>
+                            </span>
+                            </a>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="main">
+            <div class="main__wrap wrap">
+                <div class="main__bubble1 js-svg" data-svg-src="app/objects/main__bubble1.svg"></div>
+                <div class="main__bubble2 js-svg" data-svg-src="app/objects/main__bubble2.svg"></div>
+                <div class="main__content">
+                    <div class="main__head">
+                        <div class="main__head-text color-blue">Только для&nbsp;водителей</div>
+                        <div class="main__head-uber">
+                            <svg class="icon icon-uber uber" viewBox="0 0 60 21">
+                                <use xlink:href="/app/icons/sprite.svg#uber"></use>
+                            </svg>
+                        </div>
+                        <div class="main__head-lya">
+                            <svg class="icon icon-lya lya" viewBox="0 0 43 30">
+                                <use xlink:href="/app/icons/sprite.svg#lya"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="main__title h1">Учавствуй в&nbsp;акции от&nbsp;Uber и&nbsp;выиграй до&nbsp;400 000$</div>
+                    <div class="main__desc color-grey">Получите возможность всего за&nbsp;20$ выиграть до&nbsp;400 000$ каждую неделю!</div>
+                </div>
+                <div class="main__img js-svg" data-svg-src="/app/objects/main__img.svg"></div>
+                <div class="main__buttons buttons flex"><a class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                    <a
+                    class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                        <span
+                        class="btn__text-title">App Store</span>
+                            </span>
+                            </span>
+                            </a>
+                </div>
+            </div>
+        </div>
+        <div class="offer" id="share">
+            <div class="offer__wrap wrap">
+                <div class="offer__list flex flex_justify">
+                    <div class="offer__item">
+                        <div class="offer__head">
+                            <div class="offer__icon js-svg" data-svg-src="app/objects/step1__icon.svg"></div>
+                            <div class="offer__number">1</div>
+                        </div>
+                        <h3 class="offer__title h3">Примите участие <br>в&nbsp;нашей Акции</h3>
+                        <div class="offer__desc color-grey">Зарегистрируйтесь на&nbsp;сайте для&nbsp;отображения рейтинга и&nbsp;оплатите взнос 20$ для&nbsp;принятия участия в&nbsp;Акции от&nbsp;Uber</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                    </div>
+                    <div class="offer__item">
+                        <div class="offer__head">
+                            <div class="offer__icon js-svg" data-svg-src="app/objects/step2__icon.svg"></div>
+                            <div class="offer__number">2</div>
+                        </div>
+                        <h3 class="offer__title h3">Развозите больше<br>всех заявок</h3>
+                        <div class="offer__desc color-grey">Реализуйте больше всех заявок. Каждую неделю мы подводим итоги и&nbsp;выбираем победителя!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                    </div>
+                    <div class="offer__item">
+                        <div class="offer__head">
+                            <div class="offer__icon js-svg" data-svg-src="app/objects/step3__icon.svg"></div>
+                            <div class="offer__number active">3</div>
+                        </div>
+                        <h3 class="offer__title h3">Получайте приз<br>каждую неделю!</h3>
+                        <div class="offer__desc color-grey">Станьте номером 1 и&nbsp;получите приз
+                            <br>в&nbsp;размере до&nbsp;400 000$ и&nbsp;получите
+                            <br>в&nbsp;этот же день!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="steps">
+            <div class="steps__wrap wrap">
+                <div class="steps__list">
+                    <div class="steps__item steps__item-1 flex flex_vertical">
+                        <div class="steps__col1">
+                            <div class="steps__number">ШАГ 1</div>
+                            <h2 class="steps__title h2">Зарегистрируйтесь на&nbsp;сайте и&nbsp;оплатите взнос 20$</h2>
+                            <div class="steps__desc color-grey">Скачайте и&nbsp;зарегистрируйтесь в&nbsp;нашем приложении. Участвовать можете каждую неделю!
+                                <br>Стоимость участия : 20$ / 1 раз в&nbsp;неделю.
+                                <br><a class="js-modal" href="#modal">Условия акции</a>
+                            </div><a class="steps__btn btn btn_big js-modal" href="#modal">Условия акции<span class="btn__arrow"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
+                        </div>
+                        <div class="steps__col2">
+                            <div class="steps__img js-svg" data-svg-src="app/objects/step1__img.svg"></div>
+                        </div>
+                        <div class="steps__step1-bubble1 js-svg" data-svg-src="app/objects/step1__bubble1.svg"></div>
+                        <div class="steps__step1-bubble2 js-svg" data-svg-src="app/objects/step1__bubble2.svg"></div>
+                        <div class="steps__step1-bubble3 js-svg" data-svg-src="app/objects/step1__bubble3.svg"></div>
+                        <div class="steps__step1-bubble4 js-svg" data-svg-src="app/objects/step1__bubble4.svg"></div>
+                    </div>
+                    <div class="steps__item steps__item-2 flex flex_vertical">
+                        <div class="steps__col3">
+                            <div class="steps__img js-svg" data-svg-src="app/objects/step2__img.svg"></div>
+                        </div>
+                        <div class="steps__col4">
+                            <div class="steps__number">ШАГ 2</div>
+                            <h2 class="steps__title h2">Выполните заявок больше всех</h2>
+                            <div class="steps__desc color-grey">Побеждает тот, кто по&nbsp;итогу к&nbsp;концу недели выполнит больше всех заявок.
+                                <br>Победитель получает весь призовой фонд!</div>
+                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                                <a
+                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                                    <span
+                                    class="btn__text-title">App Store</span>
+                                        </span>
+                                        </span>
+                                        </a>
+                            </div>
+                        </div>
+                        <div class="steps__step2-bubble1 js-svg" data-svg-src="app/objects/step2__bubble1.svg"></div>
+                        <div class="steps__step2-bubble2 js-svg" data-svg-src="app/objects/step2__bubble2.svg"></div>
+                        <div class="steps__step2-bubble3 js-svg" data-svg-src="app/objects/step2__bubble3.svg"></div>
+                        <div class="steps__step2-bubble4 js-svg" data-svg-src="app/objects/step2__bubble4.svg"></div>
+                    </div>
+                    <div class="steps__item steps__item-3 flex flex_vertical">
+                        <div class="steps__col5">
+                            <div class="steps__number">ШАГ 3</div>
+                            <h2 class="steps__title h2">Прийдите к&nbsp;нам в&nbsp;офис и&nbsp;заберите свой приз!</h2>
+                            <div class="steps__desc color-grey">Вы можете участвовать каждую неделю.
+                                <br>1 акция - 1 неделя.
+                                <br>Стоимость участия: 20$ - 1 неделя</div>
+                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                                <a
+                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
+                                    <span
+                                    class="btn__text-title">App Store</span>
+                                        </span>
+                                        </span>
+                                        </a>
+                            </div>
+                        </div>
+                        <div class="steps__col6">
+                            <div class="steps__img js-svg" data-svg-src="app/objects/step3__img.svg"></div>
+                        </div>
+                        <div class="steps__step3-bubble1 js-svg" data-svg-src="app/objects/step3__bubble1.svg"></div>
+                        <div class="steps__step3-bubble2 js-svg" data-svg-src="app/objects/step3__bubble2.svg"></div>
+                        <div class="steps__step3-bubble3 js-svg" data-svg-src="app/objects/step3__bubble3.svg"></div>
+                        <div class="steps__step3-bubble4 js-svg" data-svg-src="app/objects/step3__bubble4.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winners" id="winners">
+            <div class="winners__wrap wrap">
+                <h2 class="winners__title h2">Победители</h2>
+                <div class="winners__slider winners__slider_top swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей1 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей2 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей3 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей4 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей5 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей6 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                        <div class="winners__item swiper-slide">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/foto.webp">
+                                    <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
+                            </picture>
+                            <div class="winners__item-info">
+                                <div class="winners__name">Сергей7 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="winners__bottom flex flex_justify">
+                    <div class="winners__nav">
+                        <button class="winners__btn winners__btn_prev">
+                            <div class="winners__btn-icon">
+                                <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
+                                    <use xlink:href="/app/icons/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="winners__btn winners__btn_next">
+                            <div class="winners__btn-icon">
+                                <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
+                                    <use xlink:href="/app/icons/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="winners__counter counter js-counter"></div>
+                    <div class="winners__slider winners__slider_bottom swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="winners__ava swiper-slide">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/ava.webp">
+                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="winners__line"></div>
+            </div>
+        </div>
+        <div class="faq" id="faq">
+            <div class="faq__wrap wrap flex">
+                <div class="faq__bubble1 js-svg" data-svg-src="app/objects/faq__bubble1.svg"></div>
+                <div class="faq__bubble2 js-svg" data-svg-src="app/objects/faq__bubble2.svg"></div>
+                <div class="faq__bubble3 js-svg" data-svg-src="app/objects/faq__bubble3.svg"></div>
+                <div class="faq__bubble4 js-svg" data-svg-src="app/objects/faq__bubble4.svg"></div>
+                <div class="faq__left">
+                    <div class="faq__icon js-svg" data-svg-src="app/objects/conversation.svg"></div>
+                    <h2 class="faq__title h2">Часто <br>задаваемые <br>вопросы</h2>
+                </div>
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <div class="faq__head">
+                            <div class="faq__desc">Кто может принять участие?</div>
+                            <div class="faq__btn">
+                                <div class="faq__btn-icon"></div>
+                            </div>
+                        </div>
+                        <div class="faq__content">
+                            <p>Вы должны иметь транспорт и&nbsp;аккаунт в&nbsp;Uber, Такси 1, Такси 2, Такси 3.</p>
+                            <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__head">
+                            <div class="faq__desc">Что нужно сделать что бы принять участие?</div>
+                            <div class="faq__btn">
+                                <div class="faq__btn-icon"></div>
+                            </div>
+                        </div>
+                        <div class="faq__content">
+                            <p>Вы должны иметь транспорт и&nbsp;аккаунт в&nbsp;Uber, Такси 1, Такси 2, Такси 3.</p>
+                            <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__head">
+                            <div class="faq__desc">Как победить в&nbsp;акции?</div>
+                            <div class="faq__btn">
+                                <div class="faq__btn-icon"></div>
+                            </div>
+                        </div>
+                        <div class="faq__content">
+                            <p>Вы должны иметь транспорт и&nbsp;аккаунт в&nbsp;Uber, Такси 1, Такси 2, Такси 3.</p>
+                            <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__head">
+                            <div class="faq__desc">Что нужно сделать что бы принять участие?</div>
+                            <div class="faq__btn">
+                                <div class="faq__btn-icon"></div>
+                            </div>
+                        </div>
+                        <div class="faq__content">
+                            <p>Вы должны иметь транспорт и&nbsp;аккаунт в&nbsp;Uber, Такси 1, Такси 2, Такси 3.</p>
+                            <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__head">
+                            <div class="faq__desc">Как победить в&nbsp;акции?</div>
+                            <div class="faq__btn">
+                                <div class="faq__btn-icon"></div>
+                            </div>
+                        </div>
+                        <div class="faq__content">
+                            <p>Вы должны иметь транспорт и&nbsp;аккаунт в&nbsp;Uber, Такси 1, Такси 2, Такси 3.</p>
+                            <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__head">
+                            <div class="faq__desc">Что нужно сделать что бы принять участие?</div>
+                            <div class="faq__btn">
+                                <div class="faq__btn-icon"></div>
+                            </div>
+                        </div>
+                        <div class="faq__content">
+                            <p>Вы должны иметь транспорт и&nbsp;аккаунт в&nbsp;Uber, Такси 1, Такси 2, Такси 3.</p>
+                            <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrap wrap">
+                <div class="footer__top flex flex_justify flex_vertical">
+                    <a class="footer__logo js-svg" data-svg-src="app/objects/logo.svg"></a><a class="to-top js-scroll-to" href="#top"><span class="to-top__arrow"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span><span>Вернуться в&nbsp;начало</span></a>
+                    <a
+                    class="footer__polity" href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__center flex flex_justify flex_vertical">
+                    <nav class="footer__menu"><a class="footer__link js-scroll-to" href="#main">Главная</a><a class="footer__link js-scroll-to" href="#share">Акция</a><a class="footer__link js-scroll-to" href="#winners">Наши победители</a><a class="footer__link js-scroll-to" href="#faq">FAQ</a>
+                    </nav>
+                    <div class="footer__right flex flex_vertical"><a class="footer__email" href="mailto:support@oboosho.com"><strong>support@</strong>oboosho.com</a>
+                        <div class="footer__lang">
+                            <a class="footer__lang-item footer__lang-item_current" href="#ru">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/flag-ru.webp">
+                                        <img src="/app/img/flag-ru.png" class="footer__lang-icon" alt="" role="presentation" />
+                                </picture><span class="footer__lang-text">Ru</span>
+                            </a>
+                            <div class="footer__lang-list">
+                                <a class="footer__lang-item" href="#ru">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/flag-ru.webp">
+                                            <img src="/app/img/flag-ru.png" class="footer__lang-icon" alt="" role="presentation" />
+                                    </picture><span class="footer__lang-text">Ru</span>
+                                </a>
+                                <a class="footer__lang-item" href="#eng">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/flag-eng.webp">
+                                            <img src="/app/img/flag-eng.png" class="footer__lang-icon" alt="" role="presentation" />
+                                    </picture><span class="footer__lang-text">Eng</span>
+                                </a>
+                            </div>
+                        </div><a class="footer__btn btn btn_download js-modal" href="#modal">Скачать<span class="btn__load"><span class="btn__load-icon"><svg class="icon icon-arrow arrow" viewBox="0 0 12 10"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></a>
+                        <a
+                        class="footer__burger js-modal" href="#menu">
+                            <svg class="icon icon-burger burger" viewBox="0 0 17 8">
+                                <use xlink:href="/app/icons/sprite.svg#burger"></use>
+                            </svg>
+                            </a>
+                    </div>
+                </div>
+                <div class="footer__bottom flex flex_justify flex_vertical"><a class="footer__polity" href="#">Политика конфиденциальности</a><a class="footer__copyright">©Taxi 2019.  Все права защищены.</a><a class="footer__develop" href="#">Создание сайта - Bairamov Studio</a>
+                </div>
+            </div>
+        </footer>
+        <div class="video modals mfp-hide" id="video">
+            <iframe></iframe>
+        </div>
+        <div class="modal modals mfp-hide" id="modal">
+            <div class="modal__list">
+                <div class="modal__item">
+                    <div class="modal__number active">1</div>
+                    <div class="modal__text active">Вы должны работать в&nbsp;такси Uber или&nbsp;Lyft.
+                        <br>В приложении нужно будет авторизоваться через&nbsp;Ваше такси, и&nbsp;город в&nbsp;котором хотите участвовать.</div>
+                </div>
+                <div class="modal__item">
+                    <div class="modal__number">2</div>
+                    <div class="modal__text">Участие проходит в&nbsp;рамках одной недели. По итогам недели, тот кто развезет больше всех заявок, забирает весь призовой фонд.</div>
+                </div>
+                <div class="modal__item">
+                    <div class="modal__number">3</div>
+                    <div class="modal__text">Стоимость участия: 20$ в&nbsp;неделю.</div>
+                </div>
+                <div class="modal__item">
+                    <div class="modal__number">4</div>
+                    <div class="modal__text">Вы можете участвовать каждую неделю!</div>
+                </div>
+            </div>
+            <div class="modal__img js-svg" data-svg-src="app/objects/modal__img.svg"></div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1576409630133"></script>
+</body>
+
+</html>

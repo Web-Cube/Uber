@@ -1,0 +1,11 @@
+$grey: #808080;
+$blue: #3752F4;
+
+.color {
+	&-blue {
+		color: $blue;
+	}
+	&-grey {
+		color: $grey;
+	}
+}

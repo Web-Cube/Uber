@@ -1,0 +1,29 @@
+<svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.65 82.3C64.1004 82.3 82.3 64.1004 82.3 41.65C82.3 19.1996 64.1004 1 41.65 1C19.1996 1 1 19.1996 1 41.65C1 64.1004 19.1996 82.3 41.65 82.3Z" stroke="url(#paint30_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.4602 28.92C50.9196 27.6074 49.15 26.5904 47.2402 25.92" stroke="url(#paint31_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.2101 31.75C27.0048 33.3807 26.1068 35.2174 25.5601 37.17" stroke="url(#paint32_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.96 41.65C24.9585 44.6769 25.7803 47.6471 27.3372 50.2429C28.8942 52.8386 31.1277 54.9621 33.7988 56.386C36.4698 57.8098 39.4778 58.4805 42.5008 58.3262C45.5237 58.1719 48.4478 57.1984 50.96 55.51" stroke="url(#paint33_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.0698 41.65L65.4598 36.22L60.0498 32.79L60.7398 26.43L54.3798 25.69L52.2498 19.65L46.1998 21.74L41.6498 17.23L37.1098 21.74L31.0498 19.65L28.9198 25.69L22.5598 26.43L23.2498 32.79L17.8398 36.22L21.2398 41.65L17.8398 47.08L23.2498 50.51L22.5698 56.88L28.9198 57.61L31.0598 63.65L37.1098 61.56L41.6498 66.07L46.1998 61.56L52.2498 63.65L54.3798 57.61L60.7398 56.87L60.0498 50.51L65.4598 47.08L62.0698 41.65Z" stroke="url(#paint34_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="dollar" d="M40.9899 54.34V51.14C39.2789 51.1342 37.6032 50.653 36.1499 49.75L36.9099 47.63C38.2682 48.5108 39.851 48.9828 41.4699 48.99C43.7199 48.99 45.2399 47.69 45.2399 45.88C45.2399 44.07 43.9999 43.07 41.6599 42.12C38.4299 40.85 36.4299 39.39 36.4299 36.64C36.4299 33.89 38.2999 32.01 41.2199 31.54V28.34H43.2199V31.41C44.6658 31.4197 46.0848 31.802 47.3399 32.52L46.5399 34.61C45.3319 33.8875 43.9474 33.5136 42.5399 33.53C40.1099 33.53 39.1899 34.99 39.1899 36.26C39.1899 37.9 40.3599 38.73 43.1099 39.87C46.3799 41.2 48.0199 42.87 48.0199 45.66C48.0199 48.17 46.2799 50.51 43.0199 51.05V54.34H40.9899Z" fill="#181716"/>
+<path d="M41.65 82.3C64.1004 82.3 82.3 64.1004 82.3 41.65C82.3 19.1996 64.1004 1 41.65 1C19.1996 1 1 19.1996 1 41.65C1 64.1004 19.1996 82.3 41.65 82.3Z" stroke="url(#paint35_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint30_linear" x1="41.65" y1="1" x2="41.65" y2="82.3" gradientUnits="userSpaceOnUse">
+<stop/>
+</linearGradient>
+<linearGradient id="paint31_linear" x1="49.8502" y1="25.92" x2="49.8502" y2="28.92" gradientUnits="userSpaceOnUse">
+<stop/>
+</linearGradient>
+<linearGradient id="paint32_linear" x1="26.8851" y1="31.75" x2="26.8851" y2="37.17" gradientUnits="userSpaceOnUse">
+<stop/>
+</linearGradient>
+<linearGradient id="paint33_linear" x1="37.96" y1="41.65" x2="37.96" y2="58.3479" gradientUnits="userSpaceOnUse">
+<stop/>
+</linearGradient>
+<linearGradient id="paint34_linear" x1="41.6498" y1="17.23" x2="41.6498" y2="66.07" gradientUnits="userSpaceOnUse">
+<stop/>
+</linearGradient>
+<linearGradient id="paint35_linear" x1="41.65" y1="1" x2="41.65" y2="82.3" gradientUnits="userSpaceOnUse">
+<stop/>
+</linearGradient>
+</defs>
+</svg>
