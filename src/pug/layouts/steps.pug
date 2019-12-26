@@ -1,7 +1,7 @@
 +b.steps
 	+e.wrap.wrap
 		+e.list
-			+e.item.steps__item-1.flex._vertical(data-aos="column-aos" data-aos-offset="600")
+			+e.item.steps__item-1.flex._vertical(data-aos="column-aos" data-aos-offset="500")
 				+e.col1.css-column
 					+e.number ШАГ 1
 					+e.H2.title.h2 Зарегистрируйтесь на сайте и оплатите взнос 20$
@@ -12,17 +12,23 @@
 						br
 						a.js-modal(href="#modal")
 							| Условия акции
-					+e.btn.btn._big.js-modal(href="#modal") Условия акции
-						span.btn__arrow
-							+icon('arrow','0 0 12 10')
-				+e.col2
-					+e.img.js-svg(data-svg-src="app/objects/step1__img.svg")
+					+e.btn.btn__._big.js-modal(href="#modal")
+						+e.back.js-circles
+						+e.center
+							+e.SPAN.text Условия акции
+							span.btn__arrow
+								+icon('arrow2','0 0 20.852341 8.4377241')
+				+e.col2.css-image
+					+e.scene.js-scene
+						+e.scene-tablet(data-depth="0.2")
+						+e.scene-mobile(data-depth="0.4")
+					//- +e.img.js-svg(data-svg-src="app/objects/step1__img.svg")
 				+e.step1-bubble1.js-svg(data-svg-src="app/objects/step1__bubble1.svg")
 				+e.step1-bubble2.js-svg(data-svg-src="app/objects/step1__bubble2.svg")
 				+e.step1-bubble3.js-svg(data-svg-src="app/objects/step1__bubble3.svg")
 				+e.step1-bubble4.js-svg(data-svg-src="app/objects/step1__bubble4.svg")
-			+e.item.steps__item-2.flex._vertical(data-aos="column-aos" data-aos-offset="600")
-				+e.col3
+			+e.item.steps__item-2.flex._vertical(data-aos="column-aos" data-aos-offset="500")
+				+e.col3.css-image.css-to-right
 					+e.img.js-svg(data-svg-src="app/objects/step2__img.svg")
 				+e.col4.css-column
 					+e.number ШАГ 2
@@ -52,7 +58,7 @@
 				+e.step2-bubble2.js-svg(data-svg-src="app/objects/step2__bubble2.svg")
 				+e.step2-bubble3.js-svg(data-svg-src="app/objects/step2__bubble3.svg")
 				+e.step2-bubble4.js-svg(data-svg-src="app/objects/step2__bubble4.svg")
-			+e.item.steps__item-3.flex._vertical(data-aos="column-aos" data-aos-offset="600")
+			+e.item.steps__item-3.flex._vertical(data-aos="column-aos" data-aos-offset="500")
 				+e.col5.css-column
 					+e.number ШАГ 3
 					+e.H2.title.h2 Прийдите к нам в офис и заберите свой приз!
@@ -79,7 +85,7 @@
 								+e.text
 									+e.text-desc Загрузите в
 									+e.text-title App Store
-				+e.col6
+				+e.col6.css-image
 					+e.img.js-svg(data-svg-src="app/objects/step3__img.svg")
 				+e.step3-bubble1.js-svg(data-svg-src="app/objects/step3__bubble1.svg")
 				+e.step3-bubble2.js-svg(data-svg-src="app/objects/step3__bubble2.svg")

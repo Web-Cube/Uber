@@ -25,7 +25,7 @@ $(() => {
 
 		$.magnificPopup.open({
 			tClose: 'Закрыть',
-			removalDelay: 600,
+			removalDelay: 400,
 			fixedContentPos: true,
 			fixedBgPos: true,
 			overflowY: 'hidden',			

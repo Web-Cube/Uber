@@ -7,3 +7,19 @@
     	transform: scale(13);
 	}
 }
+@keyframes appButton {
+    from {
+    	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    	-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    45%, 55%{
+    	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    to {
+    	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    	-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+}

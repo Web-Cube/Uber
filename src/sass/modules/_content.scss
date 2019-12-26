@@ -218,13 +218,51 @@
 			margin-top: 80rem;
 		}
 	}
+	
+	&__scene{
+		position: relative;
+		width: 112.29282%;
+
+		picture{
+			display: block;
+			width: 100%;
+		}
+
+		&-tablet{
+			// position: absolute;
+			// right: 0;
+			// top: 50%;
+			// top: 0;
+			width: 707/813*100%;
+			padding-top: 823/813*100%;
+			position: relative;
+			left: auto !important;
+			right: -13%!important;
+
+			background: url('/img/tablet.png') center no-repeat;
+			background-size: contain;
+		}
+		&-mobile{
+			position: absolute!important;
+			left: 0;
+			top: 50%!important;
+			width: 243/813*100%;
+			padding-top: 386/813*100%;
+			margin-top: -(386/2.3/813*100%);
+
+			background: url('/img/iphone.png') center no-repeat;
+			background-size: contain;
+		}
+
+	}
+
 	&__col1 {
 		width: 612/1336*100%;
 	}
 	&__col2 {
 		width: (1336-612)/1336*100%;
 		img {
-			width: 813/724*100%;
+			// width: 813/724*100%;
 			max-width: none;
 		}
 		.steps__img {
@@ -298,6 +336,8 @@
 	}
 	&__slider {
 		width: 100%;
+		border-radius: 24px;
+		overflow: hidden;
 		&_top {
 			margin-top: 60rem;
 		}
@@ -310,8 +350,9 @@
 	}
 	&__item {
 		position: relative;
+		overflow: hidden;
 		&-img {
-			border-radius: 24px;
+			
 		}
 		&-info {
 			background: rgba(0, 0, 0, 0.12);
@@ -320,6 +361,7 @@
 			left: 0;
 			bottom: 0;
 			border-radius: 0px 24px;
+			border-bottom-left-radius: 0px;
 			width: 435rem;
 			height: 140rem;
 			display: flex;

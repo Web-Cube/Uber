@@ -6,5 +6,6 @@ import './modules/_aos';
 //import './modules/_slick';
 //import './modules/_owl';
 import './modules/_main';
+import './modules/_prlx';
 import './modules/_button';
 import './modules/_swiper';
