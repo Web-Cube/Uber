@@ -2,10 +2,11 @@ import AOS from 'aos';
 
 (() => {
 
+
 	let init = () => {
 		AOS.init({
 			duration: 600,
-			offset: 200,
+			offset: 400,
 			once: true,
 			disable: () => {
 				let maxWidth = 1025;
@@ -14,8 +15,12 @@ import AOS from 'aos';
 		});
 	}
 
+	if(window.innerWidth < 1025)
+		init()
+
 	$(window).on('load', () => {
-		setTimeout(init, 500)
+		if(window.innerWidth > 1025)
+			setTimeout(init, 100)
 	})
 
 })($)

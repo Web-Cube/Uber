@@ -1,4 +1,4 @@
-+b.offer#share(data-aos="offer-aos")
++b.offer#share(data-aos="offer-aos" data-scroll)
 	+e.wrap.wrap
 		+e.list.flex_justify
 			+e.item
@@ -7,12 +7,16 @@
 					+e.number 1
 				+e.bottom
 					+e.H3.title.h3
-						| Примите участие 
-						br 
-						| в нашей Акции
-					+e.desc.color-grey
+						span.line
+							span.word Примите&nbsp;
+							span.word участие&nbsp;
+						span.line 
+							span.word в&nbsp;
+							span.word нашей&nbsp;
+							span.word Акции&nbsp;
+					+e.desc.color-grey.css-totop
 						| Зарегистрируйтесь на сайте для отображения рейтинга и оплатите взнос 20$ для принятия участия в Акции от Uber
-					+e.A.more.more.js-modal(href="#modal")
+					+e.A.more.more.css-totop.js-modal(href="#modal")
 						span.more__text Подробнее
 						span.more__icon
 							+icon('arrow2','0 0 20.852341 8.4377241')
@@ -22,12 +26,15 @@
 					+e.number 2
 				+e.bottom
 					+e.H3.title.h3
-						| Развозите больше
-						br 
-						| всех заявок
-					+e.desc.color-grey
+						span.line
+							span.word Развозите&nbsp;
+							span.word больше&nbsp;
+						span.line
+							span.word всех&nbsp;
+							span.word заявок&nbsp;
+					+e.desc.color-grey.css-totop
 						| Реализуйте больше всех заявок. Каждую неделю мы подводим итоги и выбираем победителя!
-					+e.A.more.more.js-modal(href="#modal")
+					+e.A.more.more.css-totop.js-modal(href="#modal")
 						span.more__text Подробнее
 						span.more__icon
 							+icon('arrow2','0 0 20.852341 8.4377241')
@@ -37,16 +44,19 @@
 					+e.number.active 3
 				+e.bottom
 					+e.H3.title.h3
-						| Получайте приз
-						br 
-						| каждую неделю!
-					+e.desc.color-grey
+						span.line
+							span.word Получайте&nbsp;
+							span.word приз&nbsp;
+						span.line
+							span.word каждую&nbsp;
+							span.word неделю!&nbsp;
+					+e.desc.color-grey.css-totop
 						| Станьте номером 1 и получите приз 
 						br
 						| в размере до 400 000$ и получите 
 						br
 						| в этот же день!
-					+e.A.more.more.js-modal(href="#modal")
+					+e.A.more.more.css-totop.js-modal(href="#modal")
 						span.more__text Подробнее
 						span.more__icon
 							+icon('arrow2','0 0 20.852341 8.4377241')

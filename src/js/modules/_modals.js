@@ -16,7 +16,7 @@ $(() => {
 		var container_class = 'is-modal-open';
 
 		if($(e.currentTarget).attr('data-youtube')){
-			$(modal + ' iframe').attr('src', 'https://www.youtube.com/embed/'+$(e.currentTarget).data('youtube')+'?autoplay=1&showinfo=0&rel=0&controls=0')
+			$(modal).append(`<iframe width="1043" height="587" src="https://www.youtube.com/embed/${$(e.currentTarget).data('youtube')}?autoplay=1&showinfo=0&rel=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
 		}
 
 		if($(e.currentTarget).attr('data-input')){
@@ -41,6 +41,9 @@ $(() => {
 				},
 				beforeClose: () => {
 					$('body').removeClass(container_class)
+				},
+				afterClose: () => {
+					$('.video iframe').remove()
 				}
 			}
 		}, 0);

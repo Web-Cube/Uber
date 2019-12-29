@@ -1,67 +1,35 @@
+.line{
+
+    @include max-screen($small_tablet) {
+    	display: inline;
+    }	
+}
+.word{
+
+	@include max-screen($small_tablet) {
+		display: inline-block;
+	}	
+}
+
 [data-aos]{
-	.btn_big{
-		clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-		-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-		transition: cubic-bezier(1, 0, 0, 1) .45s;
-	}
-	.btn_big .btn__center{
+
+	.css-fade{
 		opacity: 0;
-		transition: .3s ease .4s;
+		transition: ease .8s;
+
+		@for $i from 1 to 10 {
+			&:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
+		}
 	}
 
-	.btn_app{
-		&:after{
-			pointer-events: none;
-			content: '';
-			display: block;
-			position: absolute;
-			left: -1px;
-			top: -1px;
-			right: -1px;
-			bottom: -1px;
-			background-color: #fff;
-			z-index: 50;
-			visibility: visible;
+	.css-totop{
+		transform: translateY(25px);
+		opacity: 0;
+		transition: ease .8s;
 
-			transition: .05s ease .2s;
+		@for $i from 1 to 10 {
+			&:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
 		}
-
-		&:before{
-			pointer-events: none;
-			content: '';
-			display: block;
-			content: '';
-			display: block;
-			position: absolute;
-			left: -2px;
-			top: -2px;
-			right: -2px;
-			bottom: -2px;
-			background-color: rgb(249, 249, 251);
-			z-index: 60;		
-			// transition: ease .3s;
-			// transform-origin: 50% 100%;	
-			// transform: scale(1, 0);
-	    	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-	    	-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-			
-			animation-duration: .4s;
-			// animation-duration: .3s;
-			animation-fill-mode: forwards;
-			animation-timing-function: ease;
-		}
-
-		// @for $i from 1 to 3 {
-		// 	&:nth-child(#{$i}) { 
-		// 		&:before{
-		// 			animation-delay: $i * 0.05s;
-		// 		}
-		// 		&:after{
-		// 			transition-delay: $i * 0.05s + .2s; 
-		// 		}
-				
-		// 	}
-		// }
 	}
 
 	.line{
@@ -73,9 +41,6 @@
 	    line-height: 1.2em;
 	    margin-top: -0.1em;
 
-	    @include max-screen($small_tablet) {
-	    	display: inline;
-	    }
 
 	    &:not(:first-child){
 	    	margin-top: -0.2em;
@@ -85,7 +50,7 @@
 		display: inline-block;
 		transform: translateY(100%);
 		opacity: .6;
-		transition: ease .6s;
+		transition: ease .8s;
 
 		@for $i from 1 to 30 {
 			&:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
@@ -97,25 +62,16 @@
 			transform: translateY(0%);
 			opacity: 1;
 		}
-		
-		.btn_big{
-			clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-			-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-		}
 
-		.btn_app{
-			&:after{
-				visibility: hidden;
-			}
-			&:before{
-				// transform: scale(1, 1);
-				animation-name: appButton;
-			}
-		}
-
-		.btn_big .btn__center{
+		.css-fade{
 			opacity: 1;
 		}
+
+		.css-totop{
+			opacity: 1;
+			transform: translateY(0); 
+		}
+
 	}
 }
 
@@ -196,30 +152,34 @@
 }
 
 [data-aos="offer-aos"]{
-	transition: ease-out .2s;
-	transform: scale(0,1);
-	transform-origin: 50% 50%;
 
 	.offer{
 		&__number{
 			transform: scale(.6);
 			opacity: 0;
+			transition: .3s ease .7s;
 		}
 
 		&__icon{
 			stroke-dasharray: 300;
 			stroke-dashoffset: 300;		
 			opacity: 0;
-			transition: .8s ease-in .21s;
-		
+			transition: 1.3s linear .05s;
+			// fill: transparent!important;
+			
+			.dollar{
+				// opacity: 0;
+				// fill:
+				// transition: .3s linear 1.25s;
+			}
 		}
 
-		&__bottom{
-			opacity: 0;
-			transform-origin: 0% 50%;
-			transform: scale(0);
-			transition: .5s ease .21s;
-		}
+		// &__bottom{
+		// 	opacity: 0;
+		// 	transform-origin: 0% 50%;
+		// 	transform: scale(0);
+		// 	transition: .5s ease .21s;
+		// }
 
 		// &__desc,
 		// &__title,
@@ -240,15 +200,25 @@
 		transform: scale(1, 1);
 		
 		.offer{
+			&__number{
+				opacity: 1;
+				transform: scale(1);
+			}
 			&__icon{
 				opacity: 1;
 				stroke-dashoffset: 0;
+				// fill: #fff;
+
+				.dollar{
+					// fill: #000;
+					// opacity: 1;
+				}
 			}	
 
-			&__bottom{
-				transform: scale(1);
-				opacity: 1;
-			}		
+			// &__bottom{
+			// 	transform: scale(1);
+			// 	opacity: 1;
+			// }		
 
 		}
 
@@ -258,11 +228,26 @@
 
 
 [data-aos="column-aos"]{
-	.css-column{
-		opacity: 0;
-		visibility: hidden;
-		transition: ease .6s;
+	.steps__desc{
+		transition-delay: .2s!important;
 	}
+	.steps__btn, .steps__buttons{
+		transition-delay: .25s!important;
+	}
+
+	.steps__number{
+		&:before{
+			transform: scale(1.3);
+			opacity: 0;
+			transition: .8s ease 0s;
+		}
+
+		span{
+			opacity: 0;
+			transition: .35s ease .25s;
+		}
+	}
+
 
 	.css-image{
 		transform: translateX(10%);
@@ -274,17 +259,17 @@
 		}
 	}
 
-	// .btn:not(.btn_download){
-	// 	transition-delay: 5s;
-	// }
-	// .btn__center{
-	// 	transition-delay: 8s;
-	// }
-
 	&.aos-animate{
-		.css-column{
-			opacity: 1;
-			visibility: visible;
+		
+		.steps__number{
+			&:before{
+				transform: scale(1);
+				opacity: 1;				
+			}
+
+			span{
+				opacity: 1;
+			}
 		}
 
 		.css-image{

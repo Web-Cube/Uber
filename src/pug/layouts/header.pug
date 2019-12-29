@@ -41,17 +41,25 @@
 			strong support@
 			| oboosho.com
 		+e.buttons.buttons.flex
-			+e.A.btn.btn._app
-				span.btn__center
-					span.btn__icon-apple
-						+icon('apple','0 0 28 32')
-					span.btn__text
-						span.btn__text-desc Загрузите в
-						span.btn__text-title App Store
-			+e.A.btn.btn._app(href="#")
-				span.btn__center
-					span.btn__icon-play
-						+icon('play','0 0 25 27')
-					span.btn__text
-						span.btn__text-desc Загрузите в
-						span.btn__text-title App Store
+			.buttons__item.css-totop
+				.magnetic-wrapper
+					.magnetic-inner
+						+e.A.btn.btn__._app.js-modal(href="#modal")
+							+e.back.js-circles
+							+e.center
+								+e.icon-apple
+									+icon('apple','0 0 28 32')
+								+e.text
+									+e.text-desc Загрузите в
+									+e.text-title App Store
+			.buttons__item.css-totop
+				.magnetic-wrapper
+					.magnetic-inner
+						+e.A.btn.btn__._app.js-modal(href="#modal")
+							+e.back.js-circles
+							+e.center
+								+e.icon-play
+									+icon('play','0 0 25 27')
+								+e.text
+									+e.text-desc Загрузите в
+									+e.text-title App Store

@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1577320622416">
+    <link rel="stylesheet" href="/app/css/app.css?v=1577643456218">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
 </head>
 
 <body id="top">
-    <div class="main-wrap">
+    <div class="main-wrap" id="scroll-container">
         <header class="header" data-aos="header-aos">
             <div class="header__wrap wrap">
                 <div class="header__center flex flex_justify flex_vertical">
@@ -61,14 +61,19 @@
             <div class="mobile__wrap wrap">
                 <nav class="mobile__menu"><a class="mobile__link js-scroll-to" href="#main">Главная</a><a class="mobile__link js-scroll-to" href="#share">Акция</a><a class="mobile__link js-scroll-to" href="#winners">Наши победители</a><a class="mobile__link js-scroll-to" href="#faq">FAQ</a>
                 </nav><a class="mobile__email" href="mailto:support@oboosho.com"><strong>support@</strong>oboosho.com</a>
-                <div class="mobile__buttons buttons flex"><a class="mobile__btn btn btn_app"><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
-                    <a
-                    class="mobile__btn btn btn_app" href="#"><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
-                        <span
-                        class="btn__text-title">App Store</span>
-                            </span>
-                            </span>
-                            </a>
+                <div class="mobile__buttons buttons flex">
+                    <div class="buttons__item css-totop">
+                        <div class="magnetic-wrapper">
+                            <div class="magnetic-inner"><a class="mobile__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons__item css-totop">
+                        <div class="magnetic-wrapper">
+                            <div class="magnetic-inner"><a class="mobile__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,19 +105,29 @@
                         class="word">до&nbsp;</span><span class="word">400 000$&nbsp;</span><span class="word">каждую&nbsp;</span><span class="word">неделю! </span></span>
                     </div>
                 </div>
-                <div class="main__img js-svg" data-svg-src="/app/objects/main__img.svg"></div>
-                <div class="main__buttons buttons flex"><a class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
-                    <a
-                    class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span>
-                        <span
-                        class="btn__text-title">App Store</span>
-                            </span>
-                            </span>
-                            </a>
+                <div class="main__img">
+                    <picture>
+                        <source type="image/webp" srcset="/app/objects/main__img.svg">
+                            <img src="/app/objects/main__img.svg" class="main__object" alt="" role="presentation" />
+                    </picture>
+                </div>
+                <div class="main__buttons buttons flex">
+                    <div class="buttons__item css-totop">
+                        <div class="magnetic-wrapper">
+                            <div class="magnetic-inner"><a class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons__item css-totop">
+                        <div class="magnetic-wrapper">
+                            <div class="magnetic-inner"><a class="main__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="offer" id="share" data-aos="offer-aos">
+        <div class="offer" id="share" data-aos="offer-aos" data-scroll="data-scroll">
             <div class="offer__wrap wrap">
                 <div class="offer__list flex flex_justify">
                     <div class="offer__item">
@@ -121,8 +136,8 @@
                             <div class="offer__number">1</div>
                         </div>
                         <div class="offer__bottom">
-                            <h3 class="offer__title h3">Примите участие <br>в&nbsp;нашей Акции</h3>
-                            <div class="offer__desc color-grey">Зарегистрируйтесь на&nbsp;сайте для&nbsp;отображения рейтинга и&nbsp;оплатите взнос 20$ для&nbsp;принятия участия в&nbsp;Акции от&nbsp;Uber</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
+                            <h3 class="offer__title h3"><span class="line"><span class="word">Примите&nbsp;</span><span class="word">участие&nbsp;</span></span><span class="line"> <span class="word">в&nbsp;</span><span class="word">нашей&nbsp;</span><span class="word">Акции&nbsp;</span></span></h3>
+                            <div class="offer__desc color-grey css-totop">Зарегистрируйтесь на&nbsp;сайте для&nbsp;отображения рейтинга и&nbsp;оплатите взнос 20$ для&nbsp;принятия участия в&nbsp;Акции от&nbsp;Uber</div><a class="offer__more more css-totop js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
                         </div>
                     </div>
                     <div class="offer__item">
@@ -131,8 +146,8 @@
                             <div class="offer__number">2</div>
                         </div>
                         <div class="offer__bottom">
-                            <h3 class="offer__title h3">Развозите больше<br>всех заявок</h3>
-                            <div class="offer__desc color-grey">Реализуйте больше всех заявок. Каждую неделю мы подводим итоги и&nbsp;выбираем победителя!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
+                            <h3 class="offer__title h3"><span class="line"><span class="word">Развозите&nbsp;</span><span class="word">больше&nbsp;</span></span><span class="line"><span class="word">всех&nbsp;</span><span class="word">заявок&nbsp;</span></span></h3>
+                            <div class="offer__desc color-grey css-totop">Реализуйте больше всех заявок. Каждую неделю мы подводим итоги и&nbsp;выбираем победителя!</div><a class="offer__more more css-totop js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
                         </div>
                     </div>
                     <div class="offer__item">
@@ -141,10 +156,10 @@
                             <div class="offer__number active">3</div>
                         </div>
                         <div class="offer__bottom">
-                            <h3 class="offer__title h3">Получайте приз<br>каждую неделю!</h3>
-                            <div class="offer__desc color-grey">Станьте номером 1 и&nbsp;получите приз
+                            <h3 class="offer__title h3"><span class="line"><span class="word">Получайте&nbsp;</span><span class="word">приз&nbsp;</span></span><span class="line"><span class="word">каждую&nbsp;</span><span class="word">неделю!&nbsp;</span></span></h3>
+                            <div class="offer__desc color-grey css-totop">Станьте номером 1 и&nbsp;получите приз
                                 <br>в&nbsp;размере до&nbsp;400 000$ и&nbsp;получите
-                                <br>в&nbsp;этот же день!</div><a class="offer__more more js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
+                                <br>в&nbsp;этот же день!</div><a class="offer__more more css-totop js-modal" href="#modal"><span class="more__text">Подробнее</span><span class="more__icon"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></a>
                         </div>
                     </div>
                 </div>
@@ -153,14 +168,21 @@
         <div class="steps">
             <div class="steps__wrap wrap">
                 <div class="steps__list">
-                    <div class="steps__item steps__item-1 flex flex_vertical" data-aos="column-aos" data-aos-offset="500">
-                        <div class="steps__col1 css-column">
-                            <div class="steps__number">ШАГ 1</div>
-                            <h2 class="steps__title h2">Зарегистрируйтесь на&nbsp;сайте и&nbsp;оплатите взнос 20$</h2>
-                            <div class="steps__desc color-grey">Скачайте и&nbsp;зарегистрируйтесь в&nbsp;нашем приложении. Участвовать можете каждую неделю!
+                    <div class="steps__item steps__item-1 flex flex_vertical" data-aos="column-aos">
+                        <div class="steps__col1">
+                            <div class="steps__number"> <span>ШАГ 1</span>
+                            </div>
+                            <h2 class="steps__title h2"><span class="line"><span class="word">Зарегистрируйтесь&nbsp;</span></span><span class="line"><span class="word">на&nbsp;</span><span class="word">сайте&nbsp;</span><span class="word">и&nbsp;</span><span class="word">оплатите&nbsp;</span></span><span class="line"><span class="word">взнос&nbsp;</span><span class="word">20$&nbsp;</span></span></h2>
+                            <div class="steps__desc color-grey css-totop">Скачайте и&nbsp;зарегистрируйтесь в&nbsp;нашем приложении. Участвовать можете каждую неделю!
                                 <br>Стоимость участия : 20$ / 1 раз в&nbsp;неделю.
                                 <br><a class="js-modal" href="#modal">Условия акции</a>
-                            </div><a class="steps__btn btn btn_big js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__text">Условия акции</span><span class="btn__arrow"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></span></a>
+                            </div>
+                            <div class="steps__btn-wrapper">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner"><a class="steps__btn btn btn_big css-totop js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__text">Условия акции</span><span class="btn__arrow"><svg class="icon icon-arrow2 arrow2" viewBox="0 0 20.852341 8.4377241"><use xlink:href="/app/icons/sprite.svg#arrow2"></use></svg></span></span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="steps__col2 css-image">
                             <div class="steps__scene js-scene">
@@ -173,22 +195,29 @@
                         <div class="steps__step1-bubble3 js-svg" data-svg-src="app/objects/step1__bubble3.svg"></div>
                         <div class="steps__step1-bubble4 js-svg" data-svg-src="app/objects/step1__bubble4.svg"></div>
                     </div>
-                    <div class="steps__item steps__item-2 flex flex_vertical" data-aos="column-aos" data-aos-offset="500">
+                    <div class="steps__item steps__item-2 flex flex_vertical" data-aos="column-aos">
                         <div class="steps__col3 css-image css-to-right">
                             <div class="steps__img js-svg" data-svg-src="app/objects/step2__img.svg"></div>
                         </div>
-                        <div class="steps__col4 css-column">
-                            <div class="steps__number">ШАГ 2</div>
-                            <h2 class="steps__title h2">Выполните заявок больше всех</h2>
-                            <div class="steps__desc color-grey">Побеждает тот, кто по&nbsp;итогу к&nbsp;концу недели выполнит больше всех заявок.
+                        <div class="steps__col4">
+                            <div class="steps__number"> <span>ШАГ 2</span>
+                            </div>
+                            <h2 class="steps__title h2"><span class="line"><span class="word">Выполните&nbsp;</span><span class="word">заявок&nbsp;</span></span><span class="line"><span class="word">больше&nbsp;</span><span class="word">всех&nbsp;</span></span></h2>
+                            <div class="steps__desc color-grey css-totop">Побеждает тот, кто по&nbsp;итогу к&nbsp;концу недели выполнит больше всех заявок.
                                 <br>Победитель получает весь призовой фонд!</div>
-                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
-                                <a
-                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span>
-                                    <span
-                                    class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span>
-                                        </span>
-                                        </a>
+                            <div class="steps__buttons buttons flex">
+                                <div class="buttons__item css-totop">
+                                    <div class="magnetic-wrapper">
+                                        <div class="magnetic-inner"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons__item css-totop">
+                                    <div class="magnetic-wrapper">
+                                        <div class="magnetic-inner"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="steps__step2-bubble1 js-svg" data-svg-src="app/objects/step2__bubble1.svg"></div>
@@ -196,20 +225,27 @@
                         <div class="steps__step2-bubble3 js-svg" data-svg-src="app/objects/step2__bubble3.svg"></div>
                         <div class="steps__step2-bubble4 js-svg" data-svg-src="app/objects/step2__bubble4.svg"></div>
                     </div>
-                    <div class="steps__item steps__item-3 flex flex_vertical" data-aos="column-aos" data-aos-offset="500">
-                        <div class="steps__col5 css-column">
-                            <div class="steps__number">ШАГ 3</div>
-                            <h2 class="steps__title h2">Прийдите к&nbsp;нам в&nbsp;офис и&nbsp;заберите свой приз!</h2>
-                            <div class="steps__desc color-grey">Вы можете участвовать каждую неделю.
+                    <div class="steps__item steps__item-3 flex flex_vertical" data-aos="column-aos">
+                        <div class="steps__col5">
+                            <div class="steps__number"> <span>ШАГ 3</span>
+                            </div>
+                            <h2 class="steps__title h2"> <span class="line"><span class="word">Прийдите&nbsp;</span><span class="word">к&nbsp;</span><span class="word">нам&nbsp;</span></span><span class="line"><span class="word">в&nbsp;</span><span class="word">офис&nbsp;</span><span class="word">и&nbsp;</span><span class="word">заберите&nbsp;</span></span><span class="line"><span class="word">свой&nbsp;</span><span class="word">приз!&nbsp;</span></span></h2>
+                            <div class="steps__desc color-grey css-totop">Вы можете участвовать каждую неделю.
                                 <br>1 акция - 1 неделя.
                                 <br>Стоимость участия: 20$ - 1 неделя</div>
-                            <div class="steps__buttons buttons flex"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
-                                <a
-                                class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span>
-                                    <span
-                                    class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span>
-                                        </span>
-                                        </a>
+                            <div class="steps__buttons buttons flex">
+                                <div class="buttons__item css-totop">
+                                    <div class="magnetic-wrapper">
+                                        <div class="magnetic-inner"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-apple"><svg class="icon icon-apple apple" viewBox="0 0 28 32"><use xlink:href="/app/icons/sprite.svg#apple"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons__item css-totop">
+                                    <div class="magnetic-wrapper">
+                                        <div class="magnetic-inner"><a class="steps__btn btn btn_app js-modal" href="#modal"><span class="btn__back js-circles"></span><span class="btn__center"><span class="btn__icon-play"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="btn__text"><span class="btn__text-desc">Загрузите в</span><span class="btn__text-title">App Store</span></span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="steps__col6 css-image">
@@ -223,137 +259,187 @@
                 </div>
             </div>
         </div>
-        <div class="winners" id="winners">
+        <div class="winners" id="winners" data-aos="winners-aos">
             <div class="winners__wrap wrap">
-                <h2 class="winners__title h2">Победители</h2>
-                <div class="winners__slider winners__slider_top swiper-container">
+                <h2 class="winners__title h2"> <span class="line"><span class="word">Победители</span></span></h2>
+                <div class="winners__slider winners__slider_top swiper-container css-totop">
                     <div class="swiper-wrapper">
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Сергей2 Иванов" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto.webp">
                                     <img src="/app/img/foto.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей1 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
                         </div>
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Иванов Сергей" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto2.webp">
                                     <img src="/app/img/foto2.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей2 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
                         </div>
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Александр Иванов" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto2.webp">
                                     <img src="/app/img/foto2.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей3 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
                         </div>
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Евгений Иванов" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto2.webp">
                                     <img src="/app/img/foto2.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей4 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
                         </div>
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Генадийц Иванов" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto2.webp">
                                     <img src="/app/img/foto2.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей5 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
                         </div>
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Сергей Сергей" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto2.webp">
                                     <img src="/app/img/foto2.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей6 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
                         </div>
-                        <div class="winners__item swiper-slide">
+                        <div class="winners__item swiper-slide" data-name="Иван Иванов" data-youtube="235EBuDrgG4">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/foto2.webp">
                                     <img src="/app/img/foto2.jpg" class="winners__item-img" alt="" role="presentation" />
                             </picture>
-                            <div class="winners__item-info">
-                                <div class="winners__name">Сергей7 Иванов</div><a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span></a>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="winners__item-info">
+                        <div class="winners__name">Сергей2 Иванов</div>
+                        <div class="magnetic-wrapper">
+                            <a class="winners__play js-modal" href="#video" data-youtube="235EBuDrgG4">
+                                <div class="magnetic-back"><span class="winners__play-bg"></span>
+                                </div>
+                                <div class="magnetic-inner"><span class="winners__play-icon"><svg class="icon icon-play play" viewBox="0 0 25 27"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="winners__bottom flex flex_justify">
+                <div class="winners__bottom flex flex_justify css-totop">
                     <div class="winners__nav">
-                        <button class="winners__btn winners__btn_prev">
-                            <div class="winners__btn-icon">
-                                <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
-                                    <use xlink:href="/app/icons/sprite.svg#arrow"></use>
-                                </svg>
+                        <div class="winners__nav-btn">
+                            <div class="magnetic-wrapper">
+                                <button class="winners__btn winners__btn_prev">
+                                    <div class="magnetic-back" data-scale=".85">
+                                        <div class="winners__btn-bg"></div>
+                                    </div>
+                                    <div class="magnetic-inner">
+                                        <div class="winners__btn-icon">
+                                            <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
+                                                <use xlink:href="/app/icons/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
-                        <button class="winners__btn winners__btn_next">
-                            <div class="winners__btn-icon">
-                                <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
-                                    <use xlink:href="/app/icons/sprite.svg#arrow"></use>
-                                </svg>
+                        </div>
+                        <div class="winners__nav-btn">
+                            <div class="magnetic-wrapper">
+                                <button class="winners__btn winners__btn_next">
+                                    <div class="magnetic-back" data-scale=".85">
+                                        <div class="winners__btn-bg"></div>
+                                    </div>
+                                    <div class="magnetic-inner">
+                                        <div class="winners__btn-icon">
+                                            <svg class="icon icon-arrow arrow" viewBox="0 0 12 10">
+                                                <use xlink:href="/app/icons/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
+                        </div>
                     </div>
                     <div class="winners__counter counter js-counter"></div>
                     <div class="winners__slider winners__slider_bottom swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="winners__ava swiper-slide">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/ava.webp">
-                                        <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
-                                </picture>
+                            <div class="swiper-slide">
+                                <div class="magnetic-wrapper">
+                                    <div class="magnetic-inner">
+                                        <div class="winners__ava">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/ava.webp">
+                                                    <img src="/app/img/ava.jpg" class="winners__ava-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -361,19 +447,20 @@
                 <div class="winners__line"></div>
             </div>
         </div>
-        <div class="faq" id="faq">
+        <div class="faq" id="faq" data-aos="faq-aos">
             <div class="faq__wrap wrap flex">
                 <div class="faq__bubble1 js-svg" data-svg-src="app/objects/faq__bubble1.svg"></div>
                 <div class="faq__bubble2 js-svg" data-svg-src="app/objects/faq__bubble2.svg"></div>
                 <div class="faq__bubble3 js-svg" data-svg-src="app/objects/faq__bubble3.svg"></div>
                 <div class="faq__bubble4 js-svg" data-svg-src="app/objects/faq__bubble4.svg"></div>
                 <div class="faq__left">
-                    <div class="faq__icon js-svg" data-svg-src="app/objects/conversation.svg"></div>
-                    <h2 class="faq__title h2">Часто <br>задаваемые <br>вопросы</h2>
+                    <div class="faq__icon js-svg css-fade" data-svg-src="app/objects/conversation.svg"></div>
+                    <h2 class="faq__title h2"><span class="line"><span class="word">Часто&nbsp;</span></span><span class="line"><span class="word">задаваемые&nbsp;</span></span><span class="line"><span class="word">вопросы&nbsp;</span></span></h2>
                 </div>
                 <div class="faq__list">
-                    <div class="faq__item">
+                    <div class="faq__item css-totop">
                         <div class="faq__head">
+                            <div class="faq__back js-circles"></div>
                             <div class="faq__desc">Кто может принять участие?</div>
                             <div class="faq__btn">
                                 <div class="faq__btn-icon"></div>
@@ -384,8 +471,9 @@
                             <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item css-totop">
                         <div class="faq__head">
+                            <div class="faq__back js-circles"></div>
                             <div class="faq__desc">Что нужно сделать что бы принять участие?</div>
                             <div class="faq__btn">
                                 <div class="faq__btn-icon"></div>
@@ -396,8 +484,9 @@
                             <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item css-totop">
                         <div class="faq__head">
+                            <div class="faq__back js-circles"></div>
                             <div class="faq__desc">Как победить в&nbsp;акции?</div>
                             <div class="faq__btn">
                                 <div class="faq__btn-icon"></div>
@@ -408,8 +497,9 @@
                             <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item css-totop">
                         <div class="faq__head">
+                            <div class="faq__back js-circles"></div>
                             <div class="faq__desc">Что нужно сделать что бы принять участие?</div>
                             <div class="faq__btn">
                                 <div class="faq__btn-icon"></div>
@@ -420,8 +510,9 @@
                             <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item css-totop">
                         <div class="faq__head">
+                            <div class="faq__back js-circles"></div>
                             <div class="faq__desc">Как победить в&nbsp;акции?</div>
                             <div class="faq__btn">
                                 <div class="faq__btn-icon"></div>
@@ -432,8 +523,9 @@
                             <p>Пройдите регистрацию что бы создать личный кабинет, где будет <a href="#">отображаться </a>Ваш рейтинг</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item css-totop">
                         <div class="faq__head">
+                            <div class="faq__back js-circles"></div>
                             <div class="faq__desc">Что нужно сделать что бы принять участие?</div>
                             <div class="faq__btn">
                                 <div class="faq__btn-icon"></div>
@@ -500,34 +592,32 @@
                 </div>
             </div>
         </footer>
-        <div class="video modals mfp-hide" id="video">
-            <iframe></iframe>
-        </div>
-        <div class="modal modals mfp-hide" id="modal">
-            <div class="modal__list">
-                <div class="modal__item">
-                    <div class="modal__number active">1</div>
-                    <div class="modal__text active">Вы должны работать в&nbsp;такси Uber или&nbsp;Lyft.
-                        <br>В приложении нужно будет авторизоваться через&nbsp;Ваше такси, и&nbsp;город в&nbsp;котором хотите участвовать.</div>
-                </div>
-                <div class="modal__item">
-                    <div class="modal__number">2</div>
-                    <div class="modal__text">Участие проходит в&nbsp;рамках одной недели. По итогам недели, тот кто развезет больше всех заявок, забирает весь призовой фонд.</div>
-                </div>
-                <div class="modal__item">
-                    <div class="modal__number">3</div>
-                    <div class="modal__text">Стоимость участия: 20$ в&nbsp;неделю.</div>
-                </div>
-                <div class="modal__item">
-                    <div class="modal__number">4</div>
-                    <div class="modal__text">Вы можете участвовать каждую неделю!</div>
-                </div>
+    </div>
+    <div class="video modals mfp-hide" id="video"></div>
+    <div class="modal modals mfp-hide" id="modal">
+        <div class="modal__list">
+            <div class="modal__item">
+                <div class="modal__number active">1</div>
+                <div class="modal__text active">Вы должны работать в&nbsp;такси Uber или&nbsp;Lyft.
+                    <br>В приложении нужно будет авторизоваться через&nbsp;Ваше такси, и&nbsp;город в&nbsp;котором хотите участвовать.</div>
             </div>
-            <div class="modal__img js-svg" data-svg-src="app/objects/modal__img.svg"></div>
+            <div class="modal__item">
+                <div class="modal__number">2</div>
+                <div class="modal__text">Участие проходит в&nbsp;рамках одной недели. По итогам недели, тот кто развезет больше всех заявок, забирает весь призовой фонд.</div>
+            </div>
+            <div class="modal__item">
+                <div class="modal__number">3</div>
+                <div class="modal__text">Стоимость участия: 20$ в&nbsp;неделю.</div>
+            </div>
+            <div class="modal__item">
+                <div class="modal__number">4</div>
+                <div class="modal__text">Вы можете участвовать каждую неделю!</div>
+            </div>
         </div>
+        <div class="modal__img js-svg" data-svg-src="app/objects/modal__img.svg"></div>
     </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1577320622456"></script>
+    <script src="/app/js/app.js?v=1577643456265"></script>
 </body>
 
 </html>

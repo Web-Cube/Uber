@@ -1,80 +1,87 @@
-+b.winners#winners
++b.winners#winners(data-aos="winners-aos")
 	+e.wrap.wrap
-		+e.H2.title.h2 Победители
-		+e.slider._top.swiper-container
+		+e.H2.title.h2 
+			span.line
+				span.word Победители
+		+e.slider._top.swiper-container.css-totop
 			.swiper-wrapper
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Сергей2 Иванов" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto.jpg')
-					+e.item-info
-						+e.name Сергей1 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
-							+e.play-icon
-								+icon('play','0 0 25 27')
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Иванов Сергей" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto2.jpg')
-					+e.item-info
-						+e.name Сергей2 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
-							+e.play-icon
-								+icon('play','0 0 25 27')
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Александр Иванов" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto2.jpg')
-					+e.item-info
-						+e.name Сергей3 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
-							+e.play-icon
-								+icon('play','0 0 25 27')
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Евгений Иванов" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto2.jpg')
-					+e.item-info
-						+e.name Сергей4 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
-							+e.play-icon
-								+icon('play','0 0 25 27')
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Генадийц Иванов" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto2.jpg')
-					+e.item-info
-						+e.name Сергей5 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
-							+e.play-icon
-								+icon('play','0 0 25 27')
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Сергей Сергей" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto2.jpg')
-					+e.item-info
-						+e.name Сергей6 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
-							+e.play-icon
-								+icon('play','0 0 25 27')
-				+e.item.swiper-slide
+				+e.item.swiper-slide(data-name="Иван Иванов" data-youtube="235EBuDrgG4")
 					+e.IMG.item-img(src='/img/foto2.jpg')
-					+e.item-info
-						+e.name Сергей7 Иванов
-						+e.A.play.js-modal(href="#video",data-youtube="235EBuDrgG4")
+			+e.item-info
+				+e.name Сергей2 Иванов
+				.magnetic-wrapper
+					+e.A.play.js-modal(href="#video", data-youtube="235EBuDrgG4")
+						.magnetic-back
+							+e.play-bg
+						.magnetic-inner
 							+e.play-icon
 								+icon('play','0 0 25 27')
-		+e.bottom.flex_justify
+		+e.bottom.flex_justify.css-totop
 			+e.nav
-				+e.BUTTON.btn._prev
-					+e.btn-icon
-						+icon('arrow','0 0 12 10')
-				+e.BUTTON.btn._next
-					+e.btn-icon
-						+icon('arrow','0 0 12 10')
+				+e.nav-btn
+					.magnetic-wrapper
+						+e.BUTTON.btn._prev
+							.magnetic-back(data-scale=".85")
+								+e.btn-bg
+							.magnetic-inner
+								+e.btn-icon
+									+icon('arrow','0 0 12 10')
+				+e.nav-btn
+					.magnetic-wrapper
+						+e.BUTTON.btn._next
+							.magnetic-back(data-scale=".85")
+								+e.btn-bg
+							.magnetic-inner
+								+e.btn-icon
+									+icon('arrow','0 0 12 10')
 			+e.counter.counter.js-counter
 			+e.slider._bottom.swiper-container
 				.swiper-wrapper
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
-					+e.ava.swiper-slide
-						+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
+					.swiper-slide
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.ava
+									+e.ava-img(src='/img/ava.jpg')
 		+e.line

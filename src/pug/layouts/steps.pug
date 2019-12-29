@@ -1,23 +1,38 @@
 +b.steps
 	+e.wrap.wrap
 		+e.list
-			+e.item.steps__item-1.flex._vertical(data-aos="column-aos" data-aos-offset="500")
-				+e.col1.css-column
-					+e.number ШАГ 1
-					+e.H2.title.h2 Зарегистрируйтесь на сайте и оплатите взнос 20$
-					+e.desc.color-grey 
+			+e.item.steps__item-1.flex._vertical(data-aos="column-aos")
+				+e.col1
+					+e.number 
+						span ШАГ 1
+					+e.H2.title.h2
+						span.line
+							span.word Зарегистрируйтесь&nbsp;
+						span.line
+							span.word на&nbsp;
+							span.word сайте&nbsp;
+							span.word и&nbsp;
+							span.word оплатите&nbsp;
+						span.line
+							span.word взнос&nbsp;
+							span.word 20$&nbsp;
+
+					+e.desc.color-grey.css-totop
 						| Скачайте и зарегистрируйтесь в нашем приложении. Участвовать можете каждую неделю! 
 						br 
 						| Стоимость участия :  20$ / 1 раз в неделю. 
 						br
 						a.js-modal(href="#modal")
 							| Условия акции
-					+e.btn.btn__._big.js-modal(href="#modal")
-						+e.back.js-circles
-						+e.center
-							+e.SPAN.text Условия акции
-							span.btn__arrow
-								+icon('arrow2','0 0 20.852341 8.4377241')
+					+e.btn-wrapper
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.btn.btn__._big.css-totop.js-modal(href="#modal")
+									+e.back.js-circles
+									+e.center
+										+e.SPAN.text Условия акции
+										span.btn__arrow
+											+icon('arrow2','0 0 20.852341 8.4377241')
 				+e.col2.css-image
 					+e.scene.js-scene
 						+e.scene-tablet(data-depth="0.2")
@@ -27,64 +42,97 @@
 				+e.step1-bubble2.js-svg(data-svg-src="app/objects/step1__bubble2.svg")
 				+e.step1-bubble3.js-svg(data-svg-src="app/objects/step1__bubble3.svg")
 				+e.step1-bubble4.js-svg(data-svg-src="app/objects/step1__bubble4.svg")
-			+e.item.steps__item-2.flex._vertical(data-aos="column-aos" data-aos-offset="500")
+			+e.item.steps__item-2.flex._vertical(data-aos="column-aos")
 				+e.col3.css-image.css-to-right
 					+e.img.js-svg(data-svg-src="app/objects/step2__img.svg")
-				+e.col4.css-column
-					+e.number ШАГ 2
-					+e.H2.title.h2 Выполните заявок больше всех
-					+e.desc.color-grey 
+				+e.col4
+					+e.number 
+						span ШАГ 2
+					+e.H2.title.h2
+						span.line
+							span.word Выполните&nbsp;
+							span.word заявок&nbsp;
+						span.line
+							span.word больше&nbsp;
+							span.word всех&nbsp;
+					   
+					+e.desc.color-grey.css-totop
 						| Побеждает тот, кто по итогу к концу недели выполнит больше всех заявок. 
 						br 
 						| Победитель получает весь призовой фонд!
 					+e.buttons.buttons.flex
-						+e.A.btn.btn__._app.js-modal(href="#modal")
-							+e.back.js-circles
-							+e.center
-								+e.icon-apple
-									+icon('apple','0 0 28 32')
-								+e.text
-									+e.text-desc Загрузите в
-									+e.text-title App Store
-						+e.A.btn.btn__._app.js-modal(href="#modal")
-							+e.back.js-circles
-							+e.center
-								+e.icon-play
-									+icon('play','0 0 25 27')
-								+e.text
-									+e.text-desc Загрузите в
-									+e.text-title App Store
+						.buttons__item.css-totop
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.btn.btn__._app.js-modal(href="#modal")
+										+e.back.js-circles
+										+e.center
+											+e.icon-apple
+												+icon('apple','0 0 28 32')
+											+e.text
+												+e.text-desc Загрузите в
+												+e.text-title App Store
+						.buttons__item.css-totop
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.btn.btn__._app.js-modal(href="#modal")
+										+e.back.js-circles
+										+e.center
+											+e.icon-play
+												+icon('play','0 0 25 27')
+											+e.text
+												+e.text-desc Загрузите в
+												+e.text-title App Store
 				+e.step2-bubble1.js-svg(data-svg-src="app/objects/step2__bubble1.svg")
 				+e.step2-bubble2.js-svg(data-svg-src="app/objects/step2__bubble2.svg")
 				+e.step2-bubble3.js-svg(data-svg-src="app/objects/step2__bubble3.svg")
 				+e.step2-bubble4.js-svg(data-svg-src="app/objects/step2__bubble4.svg")
-			+e.item.steps__item-3.flex._vertical(data-aos="column-aos" data-aos-offset="500")
-				+e.col5.css-column
-					+e.number ШАГ 3
-					+e.H2.title.h2 Прийдите к нам в офис и заберите свой приз!
-					+e.desc.color-grey 
+			+e.item.steps__item-3.flex._vertical(data-aos="column-aos")
+				+e.col5
+					+e.number 
+						span ШАГ 3
+					+e.H2.title.h2 
+						span.line
+							span.word Прийдите&nbsp;
+							span.word к&nbsp;
+							span.word нам&nbsp;
+						span.line
+							span.word в&nbsp;
+							span.word офис&nbsp;
+							span.word и&nbsp;
+							span.word заберите&nbsp;
+						span.line
+							span.word свой&nbsp;
+							span.word приз!&nbsp;
+					+e.desc.color-grey.css-totop
 						| Вы можете участвовать каждую неделю.
 						br
 						| 1 акция - 1 неделя. 
 						br
 						| Стоимость участия: 20$ - 1 неделя
 					+e.buttons.buttons.flex
-						+e.A.btn.btn__._app.js-modal(href="#modal")
-							+e.back.js-circles
-							+e.center
-								+e.icon-apple
-									+icon('apple','0 0 28 32')
-								+e.text
-									+e.text-desc Загрузите в
-									+e.text-title App Store
-						+e.A.btn.btn__._app.js-modal(href="#modal")
-							+e.back.js-circles
-							+e.center
-								+e.icon-play
-									+icon('play','0 0 25 27')
-								+e.text
-									+e.text-desc Загрузите в
-									+e.text-title App Store
+						.buttons__item.css-totop
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.btn.btn__._app.js-modal(href="#modal")
+										+e.back.js-circles
+										+e.center
+											+e.icon-apple
+												+icon('apple','0 0 28 32')
+											+e.text
+												+e.text-desc Загрузите в
+												+e.text-title App Store
+						.buttons__item.css-totop
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.btn.btn__._app.js-modal(href="#modal")
+										+e.back.js-circles
+										+e.center
+											+e.icon-play
+												+icon('play','0 0 25 27')
+											+e.text
+												+e.text-desc Загрузите в
+												+e.text-title App Store
 				+e.col6.css-image
 					+e.img.js-svg(data-svg-src="app/objects/step3__img.svg")
 				+e.step3-bubble1.js-svg(data-svg-src="app/objects/step3__bubble1.svg")

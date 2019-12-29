@@ -37,21 +37,28 @@
 					span.word 400 000$&nbsp;
 					span.word каждую&nbsp;
 					span.word неделю! 
-		+e.img.js-svg(data-svg-src="/app/objects/main__img.svg")
+		+e.img
+			+e.IMG.object(src='/app/objects/main__img.svg')
 		+e.buttons.buttons.flex
-				+e.A.btn.btn__._app.js-modal(href="#modal")
-					+e.back.js-circles
-					+e.center
-						+e.icon-apple
-							+icon('apple','0 0 28 32')
-						+e.text
-							+e.text-desc Загрузите в
-							+e.text-title App Store
-				+e.A.btn.btn__._app.js-modal(href="#modal")
-					+e.back.js-circles
-					+e.center
-						+e.icon-play
-							+icon('play','0 0 25 27')
-						+e.text
-							+e.text-desc Загрузите в
-							+e.text-title App Store
+			.buttons__item.css-totop
+				.magnetic-wrapper
+					.magnetic-inner
+						+e.A.btn.btn__._app.js-modal(href="#modal")
+							+e.back.js-circles
+							+e.center
+								+e.icon-apple
+									+icon('apple','0 0 28 32')
+								+e.text
+									+e.text-desc Загрузите в
+									+e.text-title App Store
+			.buttons__item.css-totop
+				.magnetic-wrapper
+					.magnetic-inner
+						+e.A.btn.btn__._app.js-modal(href="#modal")
+							+e.back.js-circles
+							+e.center
+								+e.icon-play
+									+icon('play','0 0 25 27')
+								+e.text
+									+e.text-desc Загрузите в
+									+e.text-title App Store

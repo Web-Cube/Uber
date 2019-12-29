@@ -48,6 +48,15 @@ import Swiper from 'swiper';
 	        watchSlidesProgress: true,
 	        autoplay: false,
 	        on: {
+	        	slideChange: function() {
+	        		let swiper = this;
+					let currentIndex = swiper.realIndex;
+					let name = $(swiper.slides[currentIndex]).data('name');
+					let youtube = $(swiper.slides[currentIndex]).data('youtube');
+
+					$('.winners__name').html(name)
+					$('.winners__play').attr("data-youtube", youtube)
+	        	},
 	          imagesReady: function(){
 	            let swiper = this;
 	            let totalSlides = $(this.el).find('.swiper-slide:not(.swiper-slide-duplicate)').length;
