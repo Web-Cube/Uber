@@ -1,11 +1,15 @@
 .line{
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
     @include max-screen($small_tablet) {
     	display: inline;
     }	
 }
 .word{
-
+	display: inline-block;
 	@include max-screen($small_tablet) {
 		display: inline-block;
 	}	
@@ -34,10 +38,11 @@
 
 	.line{
 		overflow: hidden;
-	    display: flex;
-	    justify-content: flex-start;
-	    align-items: flex-start;
-	    width: 100%;
+	    // display: flex;
+	    // justify-content: flex-start;
+	    // align-items: flex-start;
+	    // width: 100%;
+	    // flex-wrap: wrap;
 	    line-height: 1.2em;
 	    margin-top: -0.1em;
 
@@ -47,7 +52,7 @@
 	    }
 	}
 	.word{
-		display: inline-block;
+		// display: inline-block;
 		transform: translateY(100%);
 		opacity: .6;
 		transition: ease .8s;

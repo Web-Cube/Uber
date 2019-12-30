@@ -278,3 +278,21 @@
 		}
 	}
 }
+
+@include max-screen($large_tablet) {
+	.buttons{
+		flex-wrap: nowrap;
+	}
+	.btn{
+		&_app{
+			width: 180rem;
+		}
+		
+	}
+}
+
+@include max-screen($large_mobile) {
+	.buttons{
+		flex-wrap: wrap;
+	}	
+}

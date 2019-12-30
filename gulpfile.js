@@ -258,7 +258,10 @@ gulp.task('objects', function() {
     gulp.src(path.src.objects)
         .pipe(gulp.dest(path.build.objects))
 });
-
+gulp.task('json', function() {
+    gulp.src(path.src.json)
+        .pipe(gulp.dest(path.build.json))
+});
 gulp.task('pug',  () => {
 
     return gulp.src(path.src.html)
@@ -317,7 +320,9 @@ gulp.task('watch', ["concat"] , () => {
     gulp.watch(path.watch.objects, function(event, cb) {
         gulp.start('objects');
     });
-
+    gulp.watch(path.watch.json, function(event, cb) {
+        gulp.start('json');
+    });
     gulp.watch(path.watch.js, (event, cb) => {
         gulp.start('js');
     }); 
@@ -346,7 +351,7 @@ gulp.task('watch', ["concat"] , () => {
 
 });
 
-gulp.task('concat', ["clean", "svgSpriteBuild", "sass", "js", "img", "fonts", "objects", "pug", "attach"], ()=> {
+gulp.task('concat', ["clean", "svgSpriteBuild", "sass", "js", "img", "fonts", "objects", "json", "pug", "attach"], ()=> {
     gulp.start('list');
 })
 

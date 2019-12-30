@@ -779,6 +779,16 @@
 		&__buttons {
 			margin-right: -50px;
 		}
+		&__col2{
+			padding-left: 9%;
+		}
+		&__col3{
+			padding-right: 9%;
+		}
+
+		&__col6{
+			padding-left: 9%;
+		}
 	}
 	.steps__col4 .buttons {
 		margin-left: -50px;
@@ -989,6 +999,8 @@
 		&__col2 {
 			padding-top: 21px;
 			margin-bottom: -35px;
+			padding-right: 0;
+			padding-left: 0;
 			img, .steps__img {
 				width: 120%;
 			}
@@ -996,6 +1008,8 @@
 		&__col3 {
 			order: 2;
 			padding-top: 28px;
+			padding-right: 0;
+			padding-left: 0;
 		}
 		&__col4 {
 			order: 1;
@@ -1007,6 +1021,8 @@
 		&__col6 {
 			padding-top: 23px;
 			padding-bottom: 23px;
+			padding-right: 0;
+			padding-left: 0;
 		}
 		&__btn-wrapper{
 			margin-top: 25px;

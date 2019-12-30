@@ -7,7 +7,8 @@
         "attach": "dist/",
         "svg": "dist/app/icons/",
         "fonts": "dist/app/fonts/",
-        "objects": "dist/app/objects/"
+        "objects": "dist/app/objects/",
+        "json": "dist/app/json/"
     },
     "src": {
         "html": "src/pug/pages/**/*.pug",
@@ -15,6 +16,7 @@
         "css": "src/sass/**/*.scss",
         "img": "src/img/*.{jpg,png}",
         "objects": "src/objects/*.*",
+        "json": ["src/json/**/.*", "src/json/**/*.*"],
         "attach": ["src/attach/**/.*", "src/attach/**/*.*"],
         "svg": "src/icons/**/*.svg",
         "fonts": "src/fonts/*.*"
@@ -26,6 +28,7 @@
         "img": "src/img/**/*.*",
         "svg": "src/icons/*.svg",
         "objects": "src/objects/**/*.*",
+        "json": ["src/json/**/.*", "src/json/**/*.*"],
         "attach": ["src/attach/**/.*", "src/attach/**/*.*"],
         "fonts": "src/fonts/**/*.*"
     } 	
